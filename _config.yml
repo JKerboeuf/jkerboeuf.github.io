@@ -9,11 +9,11 @@ baseurl:
 # Title of the Site
 title: JKerboeuf Portfolio
 # Description of the Site
-description: A customizable Jekyll portfolio theme
+description: Un site portfolio pour Julien Kerboeuf
 # URL of Image of the Site
 site-image: /assets/images/banner.jpg
 # Keywords of the Site
-site-keywords: Site, Template, Theme
+site-keywords: Site, Portfolio
 # URL for the Image of custom Favicon
 favicon-url: /assets/images/icon.png
 
