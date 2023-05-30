@@ -9,7 +9,7 @@ baseurl:
 # Title of the Site
 title: JKerboeuf Portfolio
 # Description of the Site
-description: Un site portfolio pour Julien Kerboeuf
+description: 
 # URL of Image of the Site
 site-image: /assets/images/banner.jpg
 # Keywords of the Site
@@ -45,7 +45,7 @@ author-name: JKerboeuf
 # URL for the Image of the Author
 author-image: /assets/images/icon.png
 # 60 Words About the Author
-author-about: Jeune développeur passionné de jeux vidéo
+author-about: Young French developper who loves video games
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/JKerboeuf
 
