@@ -5,7 +5,8 @@ layout: page
 
 ## Presentation
 
-
+La médiatheque "MediaTek86" demande un logiciel permettant au responsable du personnel d'aisément gerer le personnel.  
+Le logiciel permet de lister le personnel et leurs absences, il permet aussi d'ajouter, de modifier ou de supprimmer un personnel ou une absence.
 
 ## Depot
 
