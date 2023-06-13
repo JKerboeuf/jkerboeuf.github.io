@@ -21,9 +21,10 @@ layout: compress
 
   window.addEventListener("scroll", function (event) {
     var scroll = this.scrollY;
+    var position = window.pageYOffset;
 
-	for (let navItem of navItems) {
-		navItem.classList.remove('is-active');
+    for (var i = 0; i < navItems.length; i++) {
+      navItems[i].classList.remove('is-active');
     }
 
     for (var i = 0; i < heroes.length; i++) {
