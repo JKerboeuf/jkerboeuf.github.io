@@ -17,14 +17,13 @@ layout: compress
 <script>
   var navItems = document.getElementsByClassName('navbar-item');
   var heroes = document.getElementsByClassName('hero');
-  const viewOffset = 200; 
+  const viewOffset = 200;
 
   window.addEventListener("scroll", function (event) {
     var scroll = this.scrollY;
-    var position = window.pageYOffset;
 
-    for (var i = 0; i < navItems.length; i++) {
-      navItems[i].classList.remove('is-active');
+	for (let navItem of navItems) {
+		navItem.classList.remove('is-active');
     }
 
     for (var i = 0; i < heroes.length; i++) {
