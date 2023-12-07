@@ -7,21 +7,24 @@ url: ''
 baseurl: 
 
 # Title of the Site
-title: JKerboeuf Portfolio
+title: JKerboeuf
 # Description of the Site
 description: Work in progress
 # URL of Image of the Site
-site-image: /assets/images/banner.jpg
+site-image: /assets/img/banner.jpg
+# URL for the Image of custom Favicon
+favicon-url: /assets/img/favicon.ico
 # Keywords of the Site
 site-keywords: Site, Portfolio
-# URL for the Image of custom Favicon
-favicon-url: /assets/images/icon.png
 
-# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: /assets/images/bg.png
+# External CSS & JS
+bootstrap-css: https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+bootstrap-js: https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+jquery: https://code.jquery.com/jquery-3.7.1.min.js
+fontawesome: https://kit.fontawesome.com/0a7f15ecf5.js
+flagicons: https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css
 
 # Social Media and Contact
-# If you don't want to use any icon, you can leave them blank.
 email: julien.kerboeuf@gmail.com
 facebook_username:
 twitter_username: LePsychoPatate
@@ -30,20 +33,16 @@ linkedin_username: jkerboeuf
 github_username:  JKerboeuf
 youtube_channel_id:
 reddit_username: PsychoPatate
-behance_username:
-dribbble_username:
-spotify_username:
 
 # Google Analytics
-google-analytics: UA-163806439-1
-
+google-analytics: G-PZ0L3V5ZS7
 # Disqus
 disqus-shortname: JKerboeuf
 
 # Name of the Author
 author-name: JKerboeuf
 # URL for the Image of the Author
-author-image: /assets/images/icon.png
+author-image: /assets/img/logo-circle.png
 # 60 Words About the Author
 author-about: Young French developper who loves video games
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
@@ -51,7 +50,7 @@ author-url: https://github.com/JKerboeuf
 
 # SASS
 sass:
-  sass_dir: _sass
+  sass_dir: assets/sass
   style: compressed
 
 # Build settings
@@ -60,7 +59,7 @@ plugins:
   - jekyll-feed
 
 # Permalink
-permalink: "blog/:title"
+permalink: "feed/:title"
 
 # Compress
 compress_html:

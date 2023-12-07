@@ -8,5 +8,5 @@
   description: Small Shell script that can extract ressources from Minecraft, mainly intended for ressource pack creators
 - name: Chill zsh theme
   link: https://github.com/JKerboeuf/chill.zsh-theme
-  image: /assets/images/chill.png
+  image: /assets/img/posts/chill.png
   description: Minimalistic theme for oh-my-zsh
