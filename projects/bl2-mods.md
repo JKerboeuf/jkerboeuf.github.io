@@ -3,46 +3,56 @@ title: Borderlands 2 Mods
 layout: project
 image: "https://cdn.cloudflare.steamstatic.com/steam/apps/49520/header.jpg?t=1645058069"
 description: A collection of visual modification made for the game Borderlands 2.
+source: https://github.com/JKerboeuf/BLCMods/tree/master/Borderlands%202%20mods/PsychoPatate
+download: https://github.com/JKerboeuf/BLCMods/tree/master/Borderlands%202%20mods/PsychoPatate
 tags:
 - Borderlands 2
 - Mod
 ---
 
-Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories and if you don't know what GitHub Pages are you can visit on click [here](https://help.github.com/en/github/working-with-github-pages/about-github-pages){:target="blank"} or [here](https://pages.github.com/){:target="blank"}
-###### Source : [`Jekyll Docs`](https://jekyllrb.com/docs/)
+## PsychoPatch
 
-> ### To know more and get started with Jekyll you can click [here](https://jekyllrb.com/){:targe="_blank"}
-	
-# Installation
-**Jekyll is a Ruby Gem that can be installed on most systems.**
-### Requirements
-* [Ruby](https://www.ruby-lang.org/en/downloads/){:target="_blank"} version 2.5.0 or above, including all development headers (ruby version can be checked by running ruby -v)
-* [Ruby Gems](https://rubygems.org/pages/download){:target="_blank"} (which you can check by running gem -v)
-* [GCC](https://gcc.gnu.org/install/){:target="_blank"} and [Make](https://www.gnu.org/software/make/){:target="_blank"}
+- A bundle of visual changes, tweaks and fixes I made.
 
-### After Installing the Requirements you can follow these guides:
-**For detailed install instructions have a look at the guide for your operating system.**
-* [macOS](https://jekyllrb.com/docs/installation/macos/){:target="_blank"}
-* [Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/){:target="_blank"}
-* [Other Linux Distros](https://jekyllrb.com/docs/installation/other-linux/){:target="_blank"}
-* [Windows](https://jekyllrb.com/docs/installation/windows/){:target="_blank"}
+---
 
-### Creating a new Jekyll site
-**We can create a new Jekyll site just by a simple command:**<br>
-> # `jekyll new my-site`
+## Proper Weapon Bodies
 
-Jekyll will create a new directory named as `my-site` which is customizable (i.e., you can change the name from `my-site` to anything you want for example `jekyll new brutus`).
+- Swaps green and blue weapon bodies because it makes more sense that way.
+- Allows you to change some weapon bodies because they have unique bodies so why not.
+- **ONLY VISUAL CHANGES, NO ACTUAL STATS ARE AFFECTED.**
 
-### Changing into the Directory
-**We have to go inside the directory:**<br>
-> # `cd my-site`
+---
 
-Again, `my-site` is just a random name which is customizable.
+## Matching Barrels
 
-### Building the site and making it available on a local server
-> # `bundle exec jekyll serve`
+- Changes every unique weapon barrel so it matches its manufacturer (Sand Hawk gets a Dahl barrel).
+- But doesn't change **all** barrels because some wouldn't make sense anymore.
+- **ONLY VISUAL CHANGES, NO ACTUAL STATS ARE AFFECTED.**
 
-### Browsing your Jekyll site
-> # Browse to [`http://localhost:4000/`](http://localhost:4000/){:target="_blank"}
+---
 
-###### On encountering any problem while building and serving your Jekyll site you can consider visiting to the [troubleshooting](https://jekyllrb.com/docs/troubleshooting/#configuration-problems){:target="_blank"} page
+## No Misleading Orange Glow
+
+(previously known as "No Glow On Non-Elemental Gemstone")
+
+- Changes or removes the orange glow on some non-elemental weapons.
+
+---
+
+## Actual Rolling Thunder
+
+- Simple changes to the Rolling Thunder that makes it decent (I think).
+
+---
+
+## Skins
+
+- Weapons skins : **[Album](https://imgur.com/a/Z7q5ma1)**
+![Image](https://i.imgur.com/fq9z1LR.jpg)
+- Cleaner and/or colorful reskin of some weapons : **[Album](https://imgur.com/a/xyvMPoa)**
+![Image](https://i.imgur.com/oeEkXkh.jpg)
+- Grenades skins : **[Album](https://imgur.com/a/KK4oHWR)**
+![Image](https://i.imgur.com/QXDNpHu.jpg)
+- Shields skins : **[Album](https://imgur.com/a/mdfLCua)**
+![Image](https://i.imgur.com/yvFOdP1.jpg)
