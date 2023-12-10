@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
 	<div class="container">
 		<a class="navbar-brand align-items-center"
-			href="{% if page.layout == 'default' %}#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+			href="{% if page.layout == 'home' %}#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
 			<img src="/assets/img/logo-circle.png" alt="Logo" width="50" height="50"
 				class="d-inline-block align-text-top">
 			JKerboeuf
@@ -13,8 +13,8 @@
 		<div class="collapse navbar-collapse" id="nav-collapsed">
 			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-					<a class="nav-link {% if page.layout == 'default' %}active{% endif %}" aria-current="page"
-						href="{% if page.layout == 'default' %}#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
+					<a class="nav-link {% if page.layout == 'home' %}active{% endif %}" aria-current="page"
+						href="{% if page.layout == 'home' %}#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
