@@ -19,10 +19,10 @@ layout: compress
 	$(document).ready(function () {
 		var userLang = navigator.language || navigator.userLanguage;
 		if (userLang.toLowerCase() == "fr" || userLang.toLowerCase().startsWith("fr-") || userLang.toLowerCase().startsWith("fr_")) {
-			window.location.href = "{{ site.url }}/fr/"
+			window.location.href = "{{ site.url }}/fr"
 		}
 		else {
-			window.location.href = "{{ site.url }}/en/"
+			window.location.href = "{{ site.url }}/en"
 		}
 	});
 </script>
