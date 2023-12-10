@@ -14,7 +14,7 @@ layout: compress
 				<nav class="level has-text-centered">
 					<div class="level-left">
 						<p class="subtitle is-uppercase has-text-weight-medium has-text-grey">
-							{{site.data.locales.strings[navlang].feed_heading}}</p>
+							{{site.data.strings.locales[navlang].feed_heading}}</p>
 					</div>
 					<div class="level-right">
 						<div class="level-item">
@@ -25,7 +25,8 @@ layout: compress
 			</div>
 		</div>
 		<div id="results-container"></div>
-		{% for post in site.posts %}
+		{% assign posts = site.posts | where:"lang", page.lang | where:"layout", "post" %}
+		{% for post in posts %}
 		{% include post-card.html %}
 		{% endfor %}
 		</div>

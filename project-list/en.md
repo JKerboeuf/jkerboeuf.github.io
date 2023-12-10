@@ -1,7 +1,8 @@
 ---
-layout: project-list
 title: Projects
-lang: en
+ref: page-project-list
+layout: project-list
 permalink: /projects/en
+lang: en
 ---
 

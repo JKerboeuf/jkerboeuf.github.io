@@ -1,4 +1,4 @@
-strings:
+locales:
   en: &DEFAULT_EN
     home: "HOME"
     about: "ABOUT"

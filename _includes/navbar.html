@@ -15,12 +15,12 @@
 				<li class="nav-item">
 					<a class="nav-link {% if page.layout == 'home' %}active{% endif %}" aria-current="page"
 						href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
-						{{site.data.locales.strings[navlang].home}}
+						{{site.data.strings.locales[navlang].home}}
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{{site.url}}/{{navlang}}#about">
-						{{site.data.locales.strings[navlang].about}}
+						{{site.data.strings.locales[navlang].about}}
 					</a>
 				</li>
 				<li class="nav-item">
@@ -31,25 +31,30 @@
 				<li class="nav-item">
 					<a class="nav-link {% if page.layout == 'post-list' %}active{% endif %}"
 						href="{{site.url}}/posts/{{navlang}}">
-						{{site.data.locales.strings[navlang].posts}}
+						{{site.data.strings.locales[navlang].posts}}
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link {% if page.layout == 'project-list' %}active{% endif %}"
 						href="{{site.url}}/projects/{{navlang}}">
-						{{site.data.locales.strings[navlang].projects}}
+						{{site.data.strings.locales[navlang].projects}}
 					</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link"
-						href="{% if page.lang == 'fr' %}{{page.url | replace: '/fr', '/en'}}{% else %}{{page.url | replace: '/en', '/fr'}}{% endif %}">
-						{% if page.lang == 'fr' %}
-						<span class="fi fi-gb"></span>
-						{% else %}
-						<span class="fi fi-fr"></span>
-						{% endif %}
-					</a>
-				</li>
+				{% assign lang_ref_pages = site.pages | where:"ref", page.ref %}
+				{% assign lang_ref_posts = site.posts | where:"ref", page.ref %}
+				{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts | sort: 'lang' %}
+				{% unless lang_ref_pages.size > 1 %}
+					<li class="nav-item"><a class="nav-link" href="/">
+						<span class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></span>
+					</a></li>
+				{% endunless %}
+				{% for link in lang_ref_pages %}
+					{% if link.lang != page.lang %}
+						<li class="nav-item"><a class="nav-link" href="{{ link.url }}">
+							<span class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></span>
+						</a></li>
+					{% endif %}
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
