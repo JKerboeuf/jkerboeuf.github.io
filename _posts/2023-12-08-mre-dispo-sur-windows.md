@@ -2,6 +2,7 @@
 title: MRE maintenant disponible pour Windows
 ref: post-mre-available-windows
 layout: post
+category: post
 lang: fr
 description: Une nouvelle version de Minecraft Resource Extractor est maintenant disponible pour Windows !
 image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/What%20is%20Jekyll%20and%20How%20to%20use%20it.png?token=AHMQUELVG36IDSA4SZEZ5P26Z64IW"
