@@ -11,23 +11,33 @@ layout: compress
 	<section class="hero is-fullheight" id="feed">
 		<div class="hero-body">
 			<div class="container">
-				{% include feedpage-heading.html %}
+				<nav class="level has-text-centered">
+					<div class="level-left">
+						<p class="subtitle is-uppercase has-text-weight-medium has-text-grey">
+							{{site.data.locales.strings[navlang].feed_heading}}</p>
+					</div>
+					<div class="level-right">
+						<div class="level-item">
+							{% include search.html %}
+						</div>
+					</div>
+				</nav>
 			</div>
 		</div>
 		<div id="results-container"></div>
 		{% for post in site.posts %}
-		{% include feed-card.html %}
+		{% include post-card.html %}
 		{% endfor %}
 		</div>
 	</section>
 	<br>
 	{% include footer.html %}
-	<script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
+	<script src="{{site.url}}/assets/js/simple-jekyll-search.js"></script>
 	<script>
 		SimpleJekyllSearch({
 			searchInput: document.getElementById('search'),
 			resultsContainer: document.getElementById('results-container'),
-			json: '{{site.url}}{{site.baseurl}}/search.json',
+			json: '{{site.url}}/search.json',
 			searchResultTemplate: '<div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="feed-card"><div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet"><div class="image is-16by9" style="background-image: url({image});"></div></div><a href="{url}"><div class="column has-text-left-desktop has-text-left-tablet"><h1 class="title is-size-4-touch">{title}</h1><div class="content has-text-grey">{content}<hr class="has-background-grey"><span class="has-text-grey">Published on <span class="has-text-weight-semibold">{date}</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{readtime} min</span> read</div></div></a></div>',
 			noResultsText: '<div class="subtitle has-text-centered is-uppercase">No Results Found</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">',
 			fuzzy: true,

@@ -1,0 +1,58 @@
+---
+title: Mods Borderlands 2
+lang: fr
+image: "https://cdn.cloudflare.steamstatic.com/steam/apps/49520/header.jpg?t=1645058069"
+description: Collection de mods visuels pour le jeu Borderlands 2.
+source: https://github.com/JKerboeuf/BLCMods/tree/master/Borderlands%202%20mods/PsychoPatate
+download: https://github.com/JKerboeuf/BLCMods/tree/master/Borderlands%202%20mods/PsychoPatate
+tags:
+- Borderlands 2
+- Mod
+---
+
+## PsychoPatch
+
+- A bundle of visual changes, tweaks and fixes I made.
+
+---
+
+## Proper Weapon Bodies
+
+- Swaps green and blue weapon bodies because it makes more sense that way.
+- Allows you to change some weapon bodies because they have unique bodies so why not.
+- **ONLY VISUAL CHANGES, NO ACTUAL STATS ARE AFFECTED.**
+
+---
+
+## Matching Barrels
+
+- Changes every unique weapon barrel so it matches its manufacturer (Sand Hawk gets a Dahl barrel).
+- But doesn't change **all** barrels because some wouldn't make sense anymore.
+- **ONLY VISUAL CHANGES, NO ACTUAL STATS ARE AFFECTED.**
+
+---
+
+## No Misleading Orange Glow
+
+(previously known as "No Glow On Non-Elemental Gemstone")
+
+- Changes or removes the orange glow on some non-elemental weapons.
+
+---
+
+## Actual Rolling Thunder
+
+- Simple changes to the Rolling Thunder that makes it decent (I think).
+
+---
+
+## Skins
+
+- Weapons skins : **[Album](https://imgur.com/a/Z7q5ma1)**
+![Image](https://i.imgur.com/fq9z1LR.jpg)
+- Cleaner and/or colorful reskin of some weapons : **[Album](https://imgur.com/a/xyvMPoa)**
+![Image](https://i.imgur.com/oeEkXkh.jpg)
+- Grenades skins : **[Album](https://imgur.com/a/KK4oHWR)**
+![Image](https://i.imgur.com/QXDNpHu.jpg)
+- Shields skins : **[Album](https://imgur.com/a/mdfLCua)**
+![Image](https://i.imgur.com/yvFOdP1.jpg)

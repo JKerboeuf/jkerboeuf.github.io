@@ -8,10 +8,24 @@ layout: compress
 
 <body>
 	{% include navbar.html %}
-	{% include showcase.html %}
-	{% include about.html %}
-	{% include contact.html %}
+	{% include home-showcase.html %}
+	{% include home-about.html %}
+	{% include home-contact.html %}
 	{% include footer.html %}
 </body>
+
+{% unless page.lang %}
+<script type="text/javascript">
+	$(document).ready(function () {
+		var userLang = navigator.language || navigator.userLanguage;
+		if (userLang.toLowerCase() == "fr" || userLang.toLowerCase().startsWith("fr-") || userLang.toLowerCase().startsWith("fr_")) {
+			window.location.href = "{{ site.url }}/fr/"
+		}
+		else {
+			window.location.href = "{{ site.url }}/en/"
+		}
+	});
+</script>
+{% endunless %}
 
 </html>

@@ -1,0 +1,25 @@
+strings:
+  en: &DEFAULT_EN
+    home: "HOME"
+    about: "ABOUT"
+    posts: "NEWS FEED"
+    projects: "MY PROJECTS"
+    lang_name: "English"
+    feed_heading: "Have a Good Read"
+  en_US:
+    <<: *DEFAULT_EN
+  en_UK:
+    <<: *DEFAULT_EN
+
+  fr: &DEFAULT_FR
+    <<: *DEFAULT_EN
+    home: "ACCUEIL"
+    about: "À PROPOS"
+    posts: "FIL D'ACTUALITÉ"
+    projects: "MES PROJETS"
+    lang_name: "Français"
+    feed_heading: "Bonne lecture"
+  fr_FR:
+    <<: *DEFAULT_FR
+  fr_BE:
+    <<: *DEFAULT_FR

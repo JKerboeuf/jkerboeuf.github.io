@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
 	<div class="container">
 		<a class="navbar-brand align-items-center"
-			href="{% if page.layout == 'home' %}#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+			href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
 			<img src="/assets/img/logo-circle.png" alt="Logo" width="50" height="50"
 				class="d-inline-block align-text-top">
 			JKerboeuf
@@ -14,21 +14,41 @@
 			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 				<li class="nav-item">
 					<a class="nav-link {% if page.layout == 'home' %}active{% endif %}" aria-current="page"
-						href="{% if page.layout == 'home' %}#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
+						href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
+						{{site.data.locales.strings[navlang].home}}
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
+					<a class="nav-link" href="{{site.url}}/{{navlang}}/#about">
+						{{site.data.locales.strings[navlang].about}}
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{{site.url}}{{site.baseurl}}/#contact">CONTACT</a>
+					<a class="nav-link" href="{{site.url}}/{{navlang}}/#contact">
+						CONTACT
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link {% if page.layout == 'feed' %}active{% endif %}"
-						href="{{site.url}}{{site.baseurl}}/feed">NEWS</a>
+					<a class="nav-link {% if page.layout == 'post-list' %}active{% endif %}"
+						href="{{site.url}}/posts/{{navlang}}">
+						{{site.data.locales.strings[navlang].posts}}
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link {% if page.layout == 'projects' %}active{% endif %}"
-						href="{{site.url}}{{site.baseurl}}/projects">PROJECTS</a>
+					<a class="nav-link {% if page.layout == 'project-list' %}active{% endif %}"
+						href="{{site.url}}/projects/{{navlang}}">
+						{{site.data.locales.strings[navlang].projects}}
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"
+						href="{% if page.lang == 'fr' %}{{page.url | replace: '/fr', '/en'}}{% else %}{{page.url | replace: '/en', '/fr'}}{% endif %}">
+						{% if page.lang == 'fr' %}
+						<span class="fi fi-gb"></span>
+						{% else %}
+						<span class="fi fi-fr"></span>
+						{% endif %}
+					</a>
 				</li>
 			</ul>
 		</div>

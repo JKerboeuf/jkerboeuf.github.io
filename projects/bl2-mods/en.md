@@ -1,6 +1,6 @@
 ---
 title: Borderlands 2 Mods
-layout: project
+lang: en
 image: "https://cdn.cloudflare.steamstatic.com/steam/apps/49520/header.jpg?t=1645058069"
 description: A collection of visual modification made for the game Borderlands 2.
 source: https://github.com/JKerboeuf/BLCMods/tree/master/Borderlands%202%20mods/PsychoPatate
