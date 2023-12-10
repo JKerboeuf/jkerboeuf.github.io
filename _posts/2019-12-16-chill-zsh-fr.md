@@ -1,0 +1,40 @@
+---
+title: Thème Chill oh-my-zsh
+ref: proj-chill-zsh
+layout: project
+category: project
+lang: fr
+description: Un thème épuré et simpliste pour oh-my-zsh.
+image: "https://raw.githubusercontent.com/JKerboeuf/chill.zsh-theme/master/chill-thumb.png"
+source: https://github.com/JKerboeuf/chill.zsh-theme
+download: https://github.com/JKerboeuf/chill.zsh-theme
+tags:
+- ZSH
+- Theme
+- Customisation
+---
+## Chill oh-my-zsh theme
+
+### Features
+
+- Shows full pwd
+- Shows git status
+- Shows command return status
+
+### Screenshot
+
+![chill theme](https://raw.githubusercontent.com/JKerboeuf/chill.zsh-theme/master/chill.png)
+
+### Installation
+
+Clone this repository in your oh-my-zsh custom themes folder :
+
+```bash
+git clone https://github.com/JKerboeuf/chill.zsh-theme.git ${ZSH_CUSTOM}/themes/Chill
+```
+
+Set the theme in your .zshrc :
+
+```bash
+ZSH_THEME="Chill/chill"
+```
