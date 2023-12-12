@@ -41,6 +41,16 @@ layout: compress
 							{% endfor %}
 						</p>
 						{%- endunless -%}
+						{%- unless page.project.size == 0 -%}
+						<a href="{{page.project}}" class="btn btn-primary" target="_blank">
+							<i class="fa-brands fa-github"></i> {{site.data.strings.locales[navlang].post_project}}
+						</a>
+						{%- endunless -%}
+						{%- unless page.download.size == 0 -%}
+						<a href="{{page.download}}" class="btn btn-primary" target="_blank">
+							<i class="fa-solid fa-download"></i> {{site.data.strings.locales[navlang].proj_download}}
+						</a>
+						{%- endunless -%}
 					</div>
 				</div>
 				<div
