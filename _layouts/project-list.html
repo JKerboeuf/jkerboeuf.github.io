@@ -12,7 +12,7 @@ layout: compress
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<div class="section">
-					<p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Projects</p>
+					<p class="subtitle is-uppercase has-text-weight-medium has-text-grey">{{page.title}}</p>
 				</div>
 				<div class="columns is-centered is-multiline is-mobile">
 					{% assign projects = site.posts | where:"lang", page.lang | where:"layout", "project" %}

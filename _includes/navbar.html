@@ -4,7 +4,7 @@
 			href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
 			<img src="/assets/img/logo-circle.png" alt="Logo" width="50" height="50"
 				class="d-inline-block align-text-top">
-			JKerboeuf
+			{{site.title}}
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapsed"
 			aria-controls="nav-collapsed" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,29 +15,29 @@
 				<li class="nav-item">
 					<a class="nav-link {% if page.layout == 'home' %}active{% endif %}" aria-current="page"
 						href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
-						{{site.data.strings.locales[navlang].home}}
+						{{site.data.strings.locales[navlang].nav_home}}
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{{site.url}}/{{navlang}}#about">
-						{{site.data.strings.locales[navlang].about}}
+						{{site.data.strings.locales[navlang].nav_about}}
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{{site.url}}/{{navlang}}#contact">
-						CONTACT
+						{{site.data.strings.locales[navlang].nav_contact}}
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link {% if page.layout == 'post-list' %}active{% endif %}"
 						href="{{site.url}}/posts/{{navlang}}">
-						{{site.data.strings.locales[navlang].posts}}
+						{{site.data.strings.locales[navlang].nav_posts}}
 					</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link {% if page.layout == 'project-list' %}active{% endif %}"
 						href="{{site.url}}/projects/{{navlang}}">
-						{{site.data.strings.locales[navlang].projects}}
+						{{site.data.strings.locales[navlang].nav_projects}}
 					</a>
 				</li>
 				{% assign lang_ref_pages = site.pages | where:"ref", page.ref %}

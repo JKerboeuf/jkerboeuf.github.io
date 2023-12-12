@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: My Projects
 ref: page-project-list
 layout: project-list
 permalink: /projects/en

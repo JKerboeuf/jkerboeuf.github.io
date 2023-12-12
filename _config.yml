@@ -7,13 +7,13 @@ url: ''
 # Title of the Site
 title: JKerboeuf
 # Description of the Site
-description: Work in progress
+description: "Welcome to my website ! It serves as my portfolio and my blog where you can check out my works and keep yourself up-to-date about everything I do."
 # URL of Image of the Site
 site-image: /assets/img/banner.jpg
 # URL for the Image of custom Favicon
 favicon-url: /assets/img/favicon.ico
 # Keywords of the Site
-site-keywords: Site, Portfolio
+site-keywords: Site, Portfolio, Blog, Dev, Video Game, Software, Code, Jeux Vidéos, Programmation
 # Default language
 locale: fr
 
@@ -26,12 +26,10 @@ flagicons: https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min
 
 # Social Media and Contact
 email: julien.kerboeuf@gmail.com
-facebook_username:
 twitter_username: LePsychoPatate
 instagram_username: lapsychopatate
 linkedin_username: jkerboeuf
 github_username:  JKerboeuf
-youtube_channel_id:
 reddit_username: PsychoPatate
 
 # Google Analytics
@@ -44,7 +42,7 @@ author-name: JKerboeuf
 # URL for the Image of the Author
 author-image: /assets/img/logo-circle.png
 # 60 Words About the Author
-author-about: Young French developper who loves video games
+author-about: Versatile and very creative, I aspire to become a video game developer. I am a French student living in Lille, and I have big plans for my future and ongoing projects.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/JKerboeuf
 

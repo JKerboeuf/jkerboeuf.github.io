@@ -27,11 +27,8 @@ layout: compress
 						<p id="description" class="content is-small has-text-weight-medium is-uppercase">
 							{{page.description | strip | strip_html | strip_newlines }}</p>
 						{% endunless %}
-						<p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Published on
-							<b>{{ page.date | date: "%-B %d, %Y" }}</b> by <a
-								href="{% if site.author-url %}{{site.author-url}}{% else %}{{site.url}}/#about{% endif %}"
-								target="_blank"><b class="has-text-link"><u>{{site.author-name}}</u></b>
-							</a>
+						<p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">{{site.data.strings.locales[navlang].post_published}}
+							<b>{{ page.date | date: "%-B %d, %Y" }}</b>
 						</p>
 						{%- assign tags = page.tags -%}
 						{%- unless tags.size == 0 -%}
@@ -46,12 +43,12 @@ layout: compress
 						{%- endunless -%}
 						{%- unless page.source.size == 0 -%}
 						<a href="{{page.source}}" class="btn btn-primary" target="_blank">
-							<i class="fa-brands fa-github"></i> Source code
+							<i class="fa-brands fa-github"></i> {{site.data.strings.locales[navlang].proj_source}}
 						</a>
 						{%- endunless -%}
 						{%- unless page.download.size == 0 -%}
 						<a href="{{page.download}}" class="btn btn-primary" target="_blank">
-							<i class="fa-solid fa-download"></i> Download
+							<i class="fa-solid fa-download"></i> {{site.data.strings.locales[navlang].proj_download}}
 						</a>
 						{%- endunless -%}
 					</div>
