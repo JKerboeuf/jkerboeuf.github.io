@@ -23,7 +23,7 @@ Le script Shell reste le même et sera toujours disponible pour les utilisateurs
 
 ### Comment l'utiliser
 
-- Vérifiez et installer les prérequis si besoin
+- Vérifiez et installer les prérequis au dessus si besoin
 - Téléchargez la dernière version **Windows** **[ici](https://github.com/JKerboeuf/Minecraft-Resource-Extractor/releases/latest){:target="_blank"}**, elle se trouve en dessous de "Assets" et devrait se nommer **"mre-for-windows.zip"**
 - Extraire le dossier dans le fichier .zip précédement téléchargé et executez `MinecraftResourceExtractor.exe`
 - Suivez les instructions données et extrayez ce que vous voulez !

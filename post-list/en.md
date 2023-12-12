@@ -1,5 +1,5 @@
 ---
-title: News Feed
+title: News
 ref: page-post-list
 layout: post-list
 permalink: /posts/en

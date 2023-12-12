@@ -11,9 +11,8 @@ download: https://github.com/JKerboeuf/chill.zsh-theme
 tags:
 - ZSH
 - Theme
-- Customization
+- Bash
 ---
-## Chill oh-my-zsh theme
 
 ### Features
 
