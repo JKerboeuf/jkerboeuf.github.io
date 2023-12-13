@@ -7,7 +7,7 @@ lang: fr
 description: A very early look at a game I started when learning Unity.
 image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
 tags:
-- Game
+- Jeu
 - Unity
 - C#
 - Unifinished

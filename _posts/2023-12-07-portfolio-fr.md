@@ -7,7 +7,6 @@ lang: fr
 description: Mon site web portfolio personel, celui sur lequel vous êtes !
 image: "/assets/img/logo.png"
 tags:
-- Internship
 - Web
 - Jekyll
 - HTML/CSS

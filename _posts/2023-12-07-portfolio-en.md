@@ -7,7 +7,6 @@ lang: en
 description: My personal portfolio website, the one your on !
 image: "/assets/img/logo.png"
 tags:
-- Internship
 - Web
 - Jekyll
 - HTML/CSS

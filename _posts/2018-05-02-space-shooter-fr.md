@@ -8,7 +8,7 @@ description: A simple Unity game about a spaceship shooting at asteroids made by
 image: "https://connect-prd-cdn.unity.com/20190130/7eacfa6e-8c77-454c-9d79-02ba14cf2146_spaceshooter_projectheader.png.200x0x1.webp"
 download: https://drive.google.com/file/d/1F4NDGP_DxlNW9bRFrMggKQbMyUE18MuM/view?usp=sharing
 tags:
-- Game
+- Jeu
 - Unity
 - C#
 ---
