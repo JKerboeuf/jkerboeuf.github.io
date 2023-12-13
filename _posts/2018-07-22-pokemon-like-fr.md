@@ -1,5 +1,5 @@
 ---
-title: Jeu Pokemon-like Sans Titre
+title: Jeu Pokemon-like
 ref: proj-pokemon-like
 layout: project
 category: project
