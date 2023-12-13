@@ -12,6 +12,7 @@ tags:
 - Jekyll
 - HTML/CSS
 - Javascript
+- En cours
 ---
 
 C'est ce site ! C'est mon moyen pour donner des mises à jour et publier mes travaux.  

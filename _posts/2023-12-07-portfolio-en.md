@@ -12,6 +12,7 @@ tags:
 - Jekyll
 - HTML/CSS
 - Javascript
+- Work in progress
 ---
 
 It is this website ! It is my tool to give updates and publish my works to the world.  
