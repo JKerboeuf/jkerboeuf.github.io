@@ -4,7 +4,7 @@ ref: proj-chill-zsh
 layout: project
 category: project
 lang: fr
-description: Un thème épuré et simpliste pour oh-my-zsh.
+description: Un thème épuré et simpliste pour oh-my-zsh
 image: "https://raw.githubusercontent.com/JKerboeuf/chill.zsh-theme/master/chill-thumb.png"
 source: https://github.com/JKerboeuf/chill.zsh-theme
 download: https://github.com/JKerboeuf/chill.zsh-theme

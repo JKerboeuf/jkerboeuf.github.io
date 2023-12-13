@@ -6,6 +6,7 @@ category: project
 lang: fr
 description: Mon site web portfolio personel, celui sur lequel vous êtes !
 image: "/assets/img/logo.png"
+source: https://github.com/JKerboeuf/jkerboeuf.github.io
 tags:
 - Web
 - Jekyll
@@ -13,7 +14,7 @@ tags:
 - Javascript
 ---
 
-It is this website ! It is my tool to give updates and publish my works to the world.  
-It is made with [Jekyll](https://jekyllrb.com/) and freely hosted on [Github Pages](https://pages.github.com/).  
-I took the [WhatATheme](https://thedevslot.github.io/WhatATheme/) template by [The Devslot](https://github.com/thedevslot) as a base, but I intend to change a lot of things to get it to how **I** really want my website to be.  
-The website also uses [Bootstrap](https://getbootstrap.com/) and [Font Awesome](https://fontawesome.com/).
+C'est ce site ! C'est mon moyen pour donner des mises à jour et publier mes travaux.  
+Il est fait avec [Jekyll](https://jekyllrb.com/) et hebergé par [Github Pages](https://pages.github.com/).  
+J'ai pris le template [WhatATheme](https://thedevslot.github.io/WhatATheme/) par [The Devslot](https://github.com/thedevslot) comme base mais je compte le changé beaucoup pour le faire comme **je** veux que mon site soit.  
+Ce site utilise aussi [Bootstrap](https://getbootstrap.com/) et [Font Awesome](https://fontawesome.com/).

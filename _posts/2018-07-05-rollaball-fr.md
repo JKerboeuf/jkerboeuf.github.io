@@ -4,7 +4,7 @@ ref: proj-rollaball
 layout: project
 category: project
 lang: fr
-description: A simple Unity game about a ball collecting things made by following a tutorial.
+description: Un jeu Unity où l'on incarne une boule qui ramasse des trucs fait en suivant un tutoriel
 image: "https://connect-prd-cdn.unity.com/20200720/learn/images/98d62c5a-f856-4b1f-ae9f-d92fc780aa8a_MASTER.png.200x0x1.webp"
 download: https://drive.google.com/file/d/1ME_wSusv-hD1Dqi4__bvr-_xoVFQh955/view?usp=sharing
 tags:
@@ -13,13 +13,13 @@ tags:
 - C#
 ---
 
-## What is it ?
+## Qu'est-ce que c'est ?
 
-This is a game about a ball collecting shiny floating things.  
-I made this while following the Unity tutorial **["Roll-a-Ball"](https://learn.unity.com/project/roll-a-ball){:target=_blank}**.  
-I did extend it a little bit by adding a second level, adding a pickup sound and a small menu when finishing a level.
+Un jeu d'une boule qui ramasse des trucs flotant qui brillents.  
+J'ai fais ce jeu en suivant le tutoriel Unity **["Roll-a-Ball"](https://learn.unity.com/project/roll-a-ball){:target=_blank}**.  
+J'ai ajouté un petit peu au projet en ajoutant un second niveau, un son au ramassage et un petit menu de fin de niveau.
 
-## How does it look ?
+## À quoi ca ressemble ?
 
 ![Roll-a-Ball screenshot](https://i.imgur.com/Oc5uYKK.png)
-*Fantastic.*
+*Fantastique.*

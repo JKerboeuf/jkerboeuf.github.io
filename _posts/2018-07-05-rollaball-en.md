@@ -4,7 +4,7 @@ ref: proj-rollaball
 layout: project
 category: project
 lang: en
-description: A simple Unity game about a ball collecting things made by following a tutorial.
+description: A simple Unity game about a ball collecting things made by following a tutorial
 image: "https://connect-prd-cdn.unity.com/20200720/learn/images/98d62c5a-f856-4b1f-ae9f-d92fc780aa8a_MASTER.png.200x0x1.webp"
 download: https://drive.google.com/file/d/1ME_wSusv-hD1Dqi4__bvr-_xoVFQh955/view?usp=sharing
 tags:
