@@ -4,7 +4,7 @@ ref: proj-portfolio
 layout: project
 category: project
 lang: fr
-description: Mon site web portfolio personel, celui sur lequel vous ètes !
+description: Mon site web portfolio personel, celui sur lequel vous êtes !
 image: "/assets/img/logo.png"
 tags:
 - Internship
