@@ -70,11 +70,10 @@ defaults:
       type: 'posts'
     values:
       layout: post
-  -
-    scope:
-      path: 'projects'
-    values:
-      layout: project
+      image: ""
+      description: ""
+      tags:
+        - ""
   -
     scope:
       type: 'pages'
