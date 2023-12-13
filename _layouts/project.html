@@ -46,11 +46,11 @@ layout: compress
 							<i class="fa-brands fa-github"></i> {{site.data.strings.locales[navlang].proj_source}}
 						</a>
 						{% endif %}
-						{% unless page.download.size == 0 %}
+						{% if page.download %}
 						<a href="{{page.download}}" class="btn btn-primary" target="_blank">
 							<i class="fa-solid fa-download"></i> {{site.data.strings.locales[navlang].proj_download}}
 						</a>
-						{% endunless %}
+						{% endif %}
 					</div>
 				</div>
 				<div
