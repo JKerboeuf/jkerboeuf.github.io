@@ -1,14 +1,11 @@
 <footer id="footer">
-    <!--Footer Button-->
     <div class="container has-text-centered has-background-grey-darker" id="backtotop">
         <a class="has-text-white" onclick="window.scroll(0,0)">
 			{{site.data.strings.locales[navlang].foot_back_top}}
 		</a>
     </div>
-    <!--Footer Main Section-->
     <div class="has-background-grey-darker">
         <div class="container columns">
-            <!--Name Section-->
             <div class="column has-text-left-desktop has-text-centered-mobile">
                 <a href="{{site.url}}/{{navlang}}#about">
                     <div class="columns">
@@ -26,7 +23,6 @@
                     </div>
                 </a>
             </div>
-            <!--Link Section-->
             <div class="column has-text-white">
                 <h3>{{site.data.strings.locales[navlang].foot_more_links}}</h3>
 				{% assign sitepages = site.html_pages | where:"lang", page.lang %}
