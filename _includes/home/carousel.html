@@ -1,0 +1,20 @@
+<section class="hero is-halfheight has-text-centered" id="project">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<div class="section">
+				<p class="subtitle is-uppercase has-text-weight-medium has-text-grey">{{site.data.strings.locales[navlang].home_recent_proj}}</p>
+			</div>
+			<div class="columns is-centered is-multiline is-mobile">
+				{% assign projects = site.posts | where:"lang", page.lang | where:"layout", "project" %}
+				{% for project in projects offsets:0 limit:5 %}
+				{% include project-card.html %}
+				{% endfor %}
+			</div>
+			<div>
+				<a href="{{site.url}}/projects/{{navlang}}" class="button is-rounded is-uppercase has-text-weight-normal is-white is-outlined">
+					{{site.data.strings.locales[navlang].nav_projects}}
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
