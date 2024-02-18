@@ -7,6 +7,7 @@ layout: compress
 {% include head.html %}
 
 <body>
+	{% include navbar.html %}
 	<section class="hero is-fullheight has-text-centered has-background-black-ter">
 		<div class="hero-body">
 			<div class="container">
@@ -19,12 +20,28 @@ layout: compress
 				<hr>
 				<div class="columns is-marginless is-inline-flex-desktop">
 					<a href="{{site.url}}/"
-						class="button is-white column is-rounded is-outlined is-uppercase has-text-weight-normal">Home</a>
+						class="button is-white column is-rounded is-outlined is-uppercase has-text-weight-normal">
+						{{site.data.strings.locales[navlang].nav_home}}
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
+	{% include footer.html %}
 </body>
+
+{% unless page.lang %}
+<script type="text/javascript">
+	$(document).ready(function () {
+		var userLang = navigator.language || navigator.userLanguage;
+		if (userLang.toLowerCase() == "fr" || userLang.toLowerCase().startsWith("fr-") || userLang.toLowerCase().startsWith("fr_")) {
+			window.location.href = "{{ site.url }}/404/fr"
+		}
+		else {
+			window.location.href = "{{ site.url }}/404/en"
+		}
+	});
+</script>
+{% endunless %}
 
 </html>
