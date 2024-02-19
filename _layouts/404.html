@@ -8,19 +8,19 @@ layout: compress
 
 <body>
 	{% include navbar.html %}
-	<section class="hero is-fullheight has-text-centered has-background-black-ter">
+	<section class="hero is-fullheight text-center bg-dark-subtle">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title is-1 is-uppercase has-text-weight-bold has-text-white">
+				<h1 class="title is-1 text-uppercase fw-bold text-white">
 					{{page.title}}
 				</h1>
-				<h3 class="is-uppercase has-text-weight-medium is-marginless has-text-grey-light">
+				<h3 class="text-uppercase fw-medium is-marginless text-body">
 					{{content}}
 				</h3>
 				<hr>
 				<div class="columns is-marginless is-inline-flex-desktop">
 					<a href="{{site.url}}/"
-						class="button is-white column is-rounded is-outlined is-uppercase has-text-weight-normal">
+						class="button is-white column rounded-pill is-outlined text-uppercase ">
 						{{site.data.strings.locales[navlang].nav_home}}
 					</a>
 				</div>

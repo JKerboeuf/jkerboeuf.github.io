@@ -1,14 +1,14 @@
-<div class="columns has-text-centered" id="feed-card">
+<div class="columns text-center bg-dark-subtle" id="feed-card">
     <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
         <div class="image is-16by9" style="background-image: url({{post.image}});"></div>
     </div>
     <a href="{{post.url | absolute_url}}">
         <div class="column has-text-left-desktop has-text-left-tablet">
-            <h1 class="title is-size-4-touch has-text-white">{{post.title}}</h1>
-            <div class="content has-text-white-ter">
+            <h1 class="title is-size-4-touch text-white">{{post.title}}</h1>
+            <div class="content text-body">
                 {{ post.content | truncate: 300 | strip_html | strip_newlines | strip | escape }}
-                <hr class="has-background-grey">
-                <span class="has-text-white-ter">{{site.data.strings.locales[navlang].post_published}} <span class="has-text-weight-semibold">{{ post.date | date: "%-B %d, %Y" }}</span></span>
+                <hr class="bg-grey">
+                <span class="text-body">{{site.data.strings.locales[navlang].post_published}} <span class="fw-semibold">{{ post.date | date: "%-B %d, %Y" }}</span></span>
             </div>
         </div>
     </a>

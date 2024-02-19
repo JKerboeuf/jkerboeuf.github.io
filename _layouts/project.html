@@ -8,31 +8,30 @@ layout: compress
 
 <body>
 	{% include navbar.html %}
-	<section class="hero is-fullheight has-text-centered" id="project">
+	<section class="hero is-fullheight text-center" id="project">
 		<div class="hero-body">
 			<div class="container mt-5">
 				<a href="{{page.url | relative_url}}" id="title">
-					<h1 class="title has-text-centered is-2 has-text-weight-semibold has-text-white">{{page.title}}</h1>
+					<h1 class="title text-center is-2 fw-semibold text-white">{{page.title}}</h1>
 				</a>
-				<hr class="has-background-black">
 				<div class="columns is-variable is-5">
 					<div class="column is-6">
-						<figure class="image is-16by9 has-shadow">
+						<figure class="image is-16by9">
 							<img src="{{page.image}}" alt="{{project.title}}" id="project-image">
 						</figure>
 					</div>
 					<div
-						class="subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile has-text-white-ter">
+						class="subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile text-body">
 						{% unless page.description.size == 0 %}
-						<p id="description" class="content is-small has-text-weight-medium is-uppercase">
+						<p id="description" class="content is-small fw-medium text-uppercase">
 							{{page.description | strip | strip_html | strip_newlines }}</p>
 						{% endunless %}
-						<p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-white-ter">{{site.data.strings.locales[navlang].post_published}}
+						<p class="subtitle is-6 text-uppercase text-body">{{site.data.strings.locales[navlang].post_published}}
 							<b>{{ page.date | date: "%-B %d, %Y" }}</b>
 						</p>
 						{% assign tags = page.tags %}
 						{% unless tags.size == 0 %}
-						<p class="subtitle is-uppercase">
+						<p class="subtitle text-uppercase">
 							<i class="fas fa-tags"></i>
 							{% assign i = 0 %}
 							{% for tags in page.tags %}
@@ -54,7 +53,7 @@ layout: compress
 					</div>
 				</div>
 				<div
-					class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile has-text-white-ter">
+					class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile text-body">
 					<p>{{ content }}</p>
 				</div>
 				{% unless site.disqus-shortname == "" %}

@@ -10,9 +10,9 @@ layout: compress
 	{% include navbar.html %}
 	<section class="hero is-fullheight" id="project">
 		<div class="hero-body">
-			<div class="container has-text-centered">
+			<div class="container text-center">
 				<div class="section">
-					<p class="subtitle is-uppercase has-text-weight-medium has-text-grey">{{page.title}}</p>
+					<p class="subtitle text-uppercase fw-medium text-white">{{page.title}}</p>
 				</div>
 				<div class="columns is-centered is-multiline is-mobile">
 					{% assign projects = site.posts | where:"lang", page.lang | where:"layout", "project" %}

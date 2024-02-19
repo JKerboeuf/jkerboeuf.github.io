@@ -1,54 +1,58 @@
 <footer id="footer">
-    <div class="container has-text-centered has-background-grey-darker" id="backtotop">
-        <a class="has-text-white" onclick="window.scroll(0,0)">
+	<div class="container text-center bg-dark-subtle" id="backtotop">
+		<a class="text-white" onclick="window.scroll(0,0)">
 			{{site.data.strings.locales[navlang].foot_back_top}}
 		</a>
-    </div>
-    <div class="has-background-grey-darker">
-        <div class="container columns">
-            <div class="column has-text-left-desktop has-text-centered-mobile">
-                <a href="{{site.url}}/{{navlang}}#about">
-                    <div class="columns">
-                        <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
-                            <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{site.author-image}}">
-                            </figure>
-                        </div>
-                        <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
-                                <p>{{site.data.strings.locales[navlang].home_about | truncate: 75 }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="column has-text-white">
-                <h3>{{site.data.strings.locales[navlang].foot_more_links}}</h3>
+	</div>
+	<div class="bg-body-tertiary">
+		<div class="container columns">
+			<div class="column has-text-left-desktop has-text-centered-mobile">
+				<a href="{{site.url}}/{{navlang}}#about">
+					<div class="columns">
+						<div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
+							<figure class="image is-64x64">
+								<img class="rounded-pill" src="{{site.author-image}}">
+							</figure>
+						</div>
+						<div class="column is-marginless">
+							<h5 class="text-body">{{site.author-name}}</h5>
+							<div class="content text-body-tertiary">
+								<p>{{site.data.strings.locales[navlang].home_about | truncate: 75 }}</p>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="column text-body">
+				<h3>{{site.data.strings.locales[navlang].foot_more_links}}</h3>
 				{% assign sitepages = site.html_pages | where:"lang", page.lang %}
-                {% for sitepage in sitepages %}
-                {% unless sitepage.url == '/' or sitepage.url == '/en' or sitepage.url == '/fr' limit: 2 %}
-                <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
-                </li>
-                {% endunless %}
-                {% endfor %}
-                <li>
-                    <a target="_blank" href="{{site.url}}/feed.xml">{{site.data.strings.locales[navlang].foot_rss}}</a>
-                </li>
-            </div>
-            <div class="column has-text-white">
-                <h3>{{site.data.strings.locales[navlang].foot_recent_posts}}</h3>
+				{% for sitepage in sitepages %}
+				{% unless sitepage.url == '/' or sitepage.url == '/en' or sitepage.url == '/fr' limit: 2 %}
+				<li>
+					<a href="{{sitepage.url | absolute_url}}" class="text-body-tertiary">{{sitepage.title}}</a>
+				</li>
+				{% endunless %}
+				{% endfor %}
+				<li>
+					<a target="_blank" href="{{site.url}}/feed.xml" class="text-body-tertiary">{{site.data.strings.locales[navlang].foot_rss}}</a>
+				</li>
+			</div>
+			<div class="column text-body">
+				<h3>{{site.data.strings.locales[navlang].foot_recent_posts}}</h3>
 				{% assign posts = site.posts | where:"lang", page.lang | where:"layout", "post" %}
-                {% for post in posts offset: 0 limit:3 %}
-                <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
-                </li>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-    <div class="has-background-grey-darker has-text-centered has-text-white" id="credits">
-        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} Julien Kerboeuf | {{site.data.strings.locales[navlang].foot_based_on}} <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - {{site.data.strings.locales[navlang].foot_powered_by}} <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/" target="_blank">Github</a>
-    </div>
+				{% for post in posts offset: 0 limit:3 %}
+				<li>
+					<a href="{{post.url | absolute_url}}" class="text-body-tertiary">{{post.title}}</a>
+				</li>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="bg-dark-subtle text-center text-body" id="credits">
+		<i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} Julien Kerboeuf |
+		{{site.data.strings.locales[navlang].foot_based_on}} <a href="https://github.com/thedevslot/WhatATheme"
+			target="_blank" rel="noopener noreferrer">WhatATheme</a> -
+		{{site.data.strings.locales[navlang].foot_powered_by}} <a href="https://jekyllrb.com/"
+			target="_blank">Jekyll</a> & <a href="https://github.com/" target="_blank">Github</a>
+	</div>
 </footer>
