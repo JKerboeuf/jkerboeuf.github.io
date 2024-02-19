@@ -3,14 +3,14 @@
 		<div class="container">
 			{% unless site.email == %}
 			<a id="contact-button" href="mailto:{{site.email}}"
-				class="btn border border-white rounded-pill text-white txt-uc fw-semibold align-items-center w-25"
+				class="btn border border-white rounded-pill text-white text-uppercase fw-semibold align-items-center w-25"
 				target="_blank">
 				<i class="fas fa-envelope"></i>{{site.data.strings.locales[navlang].contact_email}}
 			</a>
 			{% endunless %}
 			{% unless site.twitter_username == %}
 			<a id="contact-button" href="https://www.twitter.com/intent/tweet?screen_name={{site.twitter_username}}"
-				class="btn border border-white rounded-pill text-white txt-uc fw-semibold align-items-center w-25"
+				class="btn border border-white rounded-pill text-white text-uppercase fw-semibold align-items-center w-25"
 				target="_blank">
 				<i class="fab fa-x-twitter"></i>{{site.data.strings.locales[navlang].contact_x}}
 			</a>
