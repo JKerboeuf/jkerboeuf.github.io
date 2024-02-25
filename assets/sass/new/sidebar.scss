@@ -1,0 +1,30 @@
+#sidebar {
+	position: fixed;
+	left: 5rem;
+	top: 5%;
+	width: 15%;
+	height: 90%;
+	margin: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 1.5rem;
+
+	.nav-logo {
+		border-radius: 100%;
+		aspect-ratio: 1;
+		margin: 2rem 3rem;
+
+		img {
+			height: auto;
+			max-width: 100%;
+		}
+	}
+
+	a {
+		font-size: 1.25rem;
+	}
+
+	.fa-2x i {
+		font-size: 1.75rem !important;
+	}
+}

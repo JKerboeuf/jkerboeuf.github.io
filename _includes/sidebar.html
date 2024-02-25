@@ -1,0 +1,109 @@
+<nav class="bg-blue-1" id="sidebar">
+	<a class="rounded-pill nav-logo shad-1"
+		href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
+		<img src="/assets/img/logo-circle.png"></img>
+	</a>
+	<hr class="bor-gold-0 w-75p mx-auto bor-round-1">
+	<ul class="mx-5 list-unstyled h-100p d-flex flex-column justify-content-evenly txt-center">
+		<li>
+			<a class="btn-blue btn-icon w-100p"
+				href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
+				<i class="fa-solid fa-house"></i>{{site.data.strings.locales[navlang].nav_home}}
+			</a>
+		</li>
+		<li>
+			<a class="btn-blue btn-icon w-100p" href="{{site.url}}/about/{{navlang}}">
+				<i class="fa-solid fa-address-card"></i>{{site.data.strings.locales[navlang].nav_about}}
+			</a>
+		</li>
+		<li>
+			<a class="btn-blue btn-icon w-100p" href="{{site.url}}/{{navlang}}#contact">
+				<i class="fa-solid fa-envelope"></i>{{site.data.strings.locales[navlang].nav_contact}}
+			</a>
+		</li>
+		<li>
+			<a class="btn-blue btn-icon w-100p" href="{{site.url}}/projects/{{navlang}}">
+				<i class="fa-solid fa-diagram-project"></i>{{site.data.strings.locales[navlang].nav_projects}}
+			</a>
+		</li>
+		<li>
+			<a class="btn-blue btn-icon w-100p" href="{{site.url}}/posts/{{navlang}}">
+				<i class="fa-solid fa-newspaper"></i>{{site.data.strings.locales[navlang].nav_posts}}
+			</a>
+		</li>
+		<hr class="bor-gold-0 w-75p mx-auto bor-round-1">
+		{% assign lang_ref_pages = site.pages | where:"ref", page.ref %}
+		{% assign lang_ref_posts = site.posts | where:"ref", page.ref %}
+		{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts | sort: 'lang' %}
+		{% unless lang_ref_pages.size > 1 %}
+		<li>
+			<a class="btn-blue btn-icon w-100p" href="#">
+				<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
+				%}ENGLISH{% else %}FRANÇAIS{% endif %}
+			</a>
+		</li>
+		{% endunless %}
+		{% for link in lang_ref_pages %}
+		{% if link.lang != page.lang %}
+		<li>
+			<a class="btn-blue btn-icon w-100p" href="{{ link.url }}">
+				<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
+				%}ENGLISH{% else %}FRANÇAIS{% endif %}
+			</a>
+		</li>
+		{% endif %}
+		{% endfor %}
+		<hr class="bor-gold-0 w-75p mx-auto bor-round-1">
+		<ul class="list-unstyled d-flex flex-row justify-content-evenly fa-2x">
+			{% unless site.facebook_username == %}
+			<li>
+				<a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+			</li>
+			{% endunless %}
+			{% unless site.twitter_username == %}
+			<li>
+				<a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank">
+					<i class="fa-brands fa-x-twitter"></i>
+				</a>
+			</li>
+			{% endunless %}
+			{% unless site.instagram_username == %}
+			<li>
+				<a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</li>
+			{% endunless %}
+			{% unless site.linkedin_username == %}
+			<li>
+				<a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank">
+					<i class="fa-brands fa-linkedin-in"></i>
+				</a>
+			</li>
+			{% endunless %}
+			{% unless site.github_username == %}
+			<li>
+				<a href="http://www.github.com/{{site.github_username}}" target="_blank">
+					<i class="fa-brands fa-github"></i>
+				</a>
+			</li>
+			{% endunless %}
+			{% unless site.youtube_channel_id == %}
+			<li>
+				<a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</li>
+			{% endunless %}
+			{% unless site.reddit_username == %}
+			<li>
+				<a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank">
+					<i class="fa-brands fa-reddit-alien"></i>
+				</a>
+			</li>
+			{% endunless %}
+		</ul>
+	</ul>
+</nav>

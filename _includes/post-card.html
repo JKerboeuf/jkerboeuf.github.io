@@ -3,7 +3,7 @@
 	<div class="card-content px-3 py-2">
 		<h4 class="card-title p-1">{{ post.title }}</h4>
 		<p class="card-desc p-2">{{ post.content | truncate: 300 | strip_html | strip_newlines | strip | escape }}</p>
-		<hr class="bor-gold-0 bor-round-2 w-75p mx-auto">
+		<hr class="bor-gold-0 w-75p mx-auto">
 		<small>{{site.data.strings.locales[navlang].post_published}} {{post.date | date: "%-B %d, %Y" }}</small>
 	</div>
 </a>
