@@ -3,31 +3,22 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html>
 {% include head.html %}
 
-<body>
+<body class="bg-blue-0">
 	{% include navbar.html %}
-	<section class="hero is-fullheight text-center bg-dark-subtle">
-		<div class="hero-body">
-			<div class="container">
-				<h1 class="title is-1 text-uppercase fw-bold text-white">
-					{{page.title}}
-				</h1>
-				<h3 class="text-uppercase fw-medium is-marginless text-body">
-					{{content}}
-				</h3>
-				<hr>
-				<div class="columns is-marginless is-inline-flex-desktop">
-					<a href="{{site.url}}/"
-						class="button is-white column rounded-pill is-outlined text-uppercase ">
-						{{site.data.strings.locales[navlang].nav_home}}
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	{% include footer.html %}
+	<div class="container bg-blue-1">
+		<section class="bor-round-2 bg-blue-2">
+			<h1 class="txt-gold-0 txt-center fw-bolder">{{page.title}}</h1>
+			<hr class="w-75p mx-auto bor-gold-0 bor-round-2">
+			<p class="txt-center">{{ content | strip_html }}</p>
+			<a href="{{site.url}}/" class="btn-mixed mx-auto">
+				{{site.data.strings.locales[navlang].nav_home}}
+			</a>
+		</section>
+		{% include footer.html %}
+	</div>
 </body>
 
 {% unless page.lang %}

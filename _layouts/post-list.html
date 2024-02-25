@@ -3,37 +3,28 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html>
 {% include head.html %}
 
 <body>
 	{% include navbar.html %}
-	<section class="hero is-fullheight" id="feed">
-		<div class="hero-body">
-			<div class="container">
-				<nav class="level text-center">
-					<div class="level-left">
-						<p class="subtitle text-uppercase fw-medium text-white">
-							{{page.title}}
-						</p>
-					</div>
-					<div class="level-right">
-						<div class="level-item">
-							<!--{% include search.html %}-->
-						</div>
-					</div>
-				</nav>
+	<div class="container bg-blue-1">
+		<section class="bor-round-2 bg-blue-2">
+			<div class="row flex-row">
+				<h1 class="txt-center col txt-gold-0">{{page.title}}</h1>
+				{% include search.html %}
 			</div>
-		</div>
-		<div id="results-container"></div>
-		{% assign posts = site.posts | where:"lang", page.lang | where:"layout", "post" %}
-		{% for post in posts %}
-		{% include post-card.html %}
-		{% endfor %}
-		</div>
-	</section>
-	<br>
-	{% include footer.html %}
+		</section>
+		<section class="bor-round-2 bg-blue-2 d-none" id="searched-posts">
+		</section>
+		<section class="bor-round-2 bg-blue-2" id="posts">
+			{% assign posts = site.posts | where:"lang", page.lang | where:"layout", "post" %}
+			{% for post in posts %}
+			{% include post-card.html %}
+			{% endfor %}
+		</section>
+		{% include footer.html %}
+	</div>
 	<!--
 	<script src="{{site.url}}/assets/js/simple-jekyll-search.js"></script>
 	<script>

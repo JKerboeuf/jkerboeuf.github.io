@@ -1,0 +1,45 @@
+#page-content {
+
+	#tri-col {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
+
+		h3,
+		ul {
+			display: block;
+			width: 30%;
+		}
+	}
+
+	hr {
+		border-color: map.get($colors, "gold-0");
+		border-radius: .8rem;
+		box-shadow: 0 0 .25rem .25rem rgba(map.get($colors, "blue-0"), .25);
+		width: 75%;
+		margin: 2rem auto;
+	}
+
+	pre {
+		padding: 1.25rem;
+		background-color: rgba(map.get($colors, "blue-0"), .5);
+		border-radius: .6rem;
+
+		code {
+			background-color: transparent;
+		}
+	}
+
+	code,
+	kbd {
+		background-color: rgba(map.get($colors, "blue-0"), .5);
+		padding: .15rem .3rem;
+		border-radius: .3rem;
+		color: map.get($colors, "gold-0");
+	}
+
+	img {
+		max-width: 100%;
+	}
+}

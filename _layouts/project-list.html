@@ -3,28 +3,25 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html>
 {% include head.html %}
 
-<body>
+<body class="bg-blue-0">
 	{% include navbar.html %}
-	<section class="hero is-fullheight" id="project">
-		<div class="hero-body">
-			<div class="container text-center">
-				<div class="section">
-					<p class="subtitle text-uppercase fw-medium text-white">{{page.title}}</p>
-				</div>
-				<div class="columns is-centered is-multiline is-mobile">
-					{% assign projects = site.posts | where:"lang", page.lang | where:"layout", "project" %}
-					{% for project in projects %}
-					{% include project-card.html %}
-					{% endfor %}
-				</div>
+	<div class="container bg-blue-1">
+		<section class="bor-round-2 bg-blue-2">
+			<h1 class="txt-center txt-gold-0">{{page.title}}</h1>
+		</section>
+		<section class="bor-round-2 bg-blue-2">
+			<div class="d-flex w-100p flex-wrap mb-3">
+				{% assign projects = site.posts | where:"lang", page.lang | where:"layout", "project" %}
+				{% for project in projects %}
+				{% include project-card.html %}
+				{% endfor %}
 			</div>
-		</div>
-	</section>
+		</section>
+		{% include footer.html %}
 	</div>
-	{% include footer.html %}
 </body>
 
 </html>

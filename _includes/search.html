@@ -1,11 +1,9 @@
-<div class="field has-addons fw-medium" id="search">
-    <p class="control">
-        <input id="search-input" class="input shadow-none text-uppercase text-black" type="text"
-            placeholder="{{site.data.strings.locales[navlang].search_posts}}">
-    </p>
-    <p class="control">
-        <button class="button">
-            <i class="fas fa-search"></i>
-        </button>
-    </p>
+<div class="col d-none">
+	<input id="search-input" placeholder="{{site.data.strings.locales[navlang].search_posts}}" type="search" maxlength="64" autocomplete="off">
+	<button type="button">
+		<i class="fa-solid fa-magnifying-glass"></i>
+	</button>
+	<button type="reset">
+		<i class="fa-solid fa-xmark"></i>
+	</button>
 </div>

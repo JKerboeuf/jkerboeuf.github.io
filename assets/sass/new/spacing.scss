@@ -1,0 +1,43 @@
+/**
+ *	Padding & margin classes
+ *	Resulted class names : .[type](-side)-[size]
+ *	With [type] corresponding to : p, m
+ *	With [size] corresponding to : 0, 1, 2, 3, 4, 5, 6, auto
+ *	With (side), optionnal, corresponding to : x, y, l, r, t, b
+ *	For property corresponding to : [padding/margin]-(x/y/left/right/top/bottom): [size]
+ */
+@each $type-name, $type-prop in $space-types {
+	@each $side-name, $side-prop in $space-sides {
+		@each $size-name, $size-val in $space-sizes {
+			@if $size-name =='auto' and $type-name =='p' {
+				// Empty to ignore padding: auto
+			}
+
+			@else if $side-name =='' {
+				.#{$type-name}-#{$size-name} {
+					#{$type-prop}: $size-val !important;
+				}
+			}
+
+			@else if $side-name =='x' {
+				.#{$type-name}#{$side-name}-#{$size-name} {
+					#{$type-prop}-left: $size-val !important;
+					#{$type-prop}-right: $size-val !important;
+				}
+			}
+
+			@else if $side-name =='y' {
+				.#{$type-name}#{$side-name}-#{$size-name} {
+					#{$type-prop}-top: $size-val !important;
+					#{$type-prop}-bottom: $size-val !important;
+				}
+			}
+
+			@else {
+				.#{$type-name}#{$side-name}-#{$size-name} {
+					#{$type-prop}-#{$side-prop}: $size-val !important;
+				}
+			}
+		}
+	}
+}

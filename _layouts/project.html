@@ -3,66 +3,49 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html>
 {% include head.html %}
 
-<body>
+<body class="bg-blue-0">
 	{% include navbar.html %}
-	<section class="hero is-fullheight text-center" id="project">
-		<div class="hero-body">
-			<div class="container mt-5">
-				<a href="{{page.url | relative_url}}" id="title">
-					<h1 class="title text-center is-2 fw-semibold text-white">{{page.title}}</h1>
-				</a>
-				<div class="columns is-variable is-5">
-					<div class="column is-6">
-						<figure class="image is-16by9">
-							<img src="{{page.image}}" alt="{{project.title}}" id="project-image">
-						</figure>
+	<div class="container bg-blue-1">
+		<section class="bor-round-2 bg-blue-2">
+			<h1 class="txt-center txt-gold-0">{{page.title}}</h1>
+			<div class="row">
+				<div class="img bg-blue-2 col" style="background-image: url('{{ page.image }}')"></div>
+				<div class="px-3 py-2 col">
+					<p>{{page.description | strip | strip_html | strip_newlines }}</p>
+					<p>{{site.data.strings.locales[navlang].post_published}}
+						<strong>{{ page.date | date: "%-B %d, %Y" }}</strong>
+					</p>
+					{% assign tags = page.tags %}
+					{% unless tags.size == 0 %}
+					<div>
+						<i class="fa-solid fa-tags txt-gold"></i>
+						{% for tag in tags %}
+						<span class="bg-blue-3 bor-round-1 px-2 py-1 m-1 shad-1">{{ tag }}</span>
+						{% endfor %}
 					</div>
-					<div
-						class="subtitle column is-5 has-text-left-desktop has-text-left-fullhd has-text-left-tablet has-text-center-mobile text-body">
-						{% unless page.description.size == 0 %}
-						<p id="description" class="content is-small fw-medium text-uppercase">
-							{{page.description | strip | strip_html | strip_newlines }}</p>
-						{% endunless %}
-						<p class="subtitle is-6 text-uppercase text-body">{{site.data.strings.locales[navlang].post_published}}
-							<b>{{ page.date | date: "%-B %d, %Y" }}</b>
-						</p>
-						{% assign tags = page.tags %}
-						{% unless tags.size == 0 %}
-						<p class="subtitle text-uppercase">
-							<i class="fas fa-tags"></i>
-							{% assign i = 0 %}
-							{% for tags in page.tags %}
-							<span class="tag is-link">{{page.tags[i]}}</span>
-							{% assign i = i | plus:1 %}
-							{% endfor %}
-						</p>
-						{% endunless %}
-						{% if page.source %}
-						<a href="{{page.source}}" class="btn btn-primary" target="_blank">
-							<i class="fa-brands fa-github"></i> {{site.data.strings.locales[navlang].proj_source}}
-						</a>
-						{% endif %}
+					{% endunless %}
+					<div class="mt-4">
 						{% if page.download %}
-						<a href="{{page.download}}" class="btn btn-primary" target="_blank">
-							<i class="fa-solid fa-download"></i> {{site.data.strings.locales[navlang].proj_download}}
+						<a href="{{page.download}}" class="btn-gold btn-icon mr-3" target="_blank">
+							<i class="fa-solid fa-download"></i>{{site.data.strings.locales[navlang].proj_download}}
+						</a>
+						{% endif %}
+						{% if page.source %}
+						<a href="{{page.project}}" class="btn-gold btn-icon" target="_blank">
+							<i class="fa-brands fa-github"></i>{{site.data.strings.locales[navlang].proj_source}}
 						</a>
 						{% endif %}
 					</div>
 				</div>
-				<div
-					class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile text-body">
-					<p>{{ content }}</p>
-				</div>
-				{% unless site.disqus-shortname == "" %}
-				<div class="disqus-comments" id="disqus_thread"></div>
-				{% endunless %}
 			</div>
-		</div>
-	</section>
-	{% include footer.html %}
+		</section>
+		<section class="bor-round-2 bg-blue-2" id="page-content">
+			{{ content }}
+		</section>
+		{% include footer.html %}
 </body>
 
 </html>

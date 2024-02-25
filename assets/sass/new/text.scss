@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+body {
+	font-family: $font-body;
+	color: map.get($colors, "gold-1");
+}
+
+pre,
+code,
+kbd,
+samp {
+	font-family: $font-mono;
+}
+
+%heading {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+	line-height: 1.2;
+	color: inherit;
+}
+
+/**
+ *	Header sizing rules & classes
+ *	Affects h1-6 elements & .h1-6 classes
+ *	with the correspondind sizes in $header-sizes
+ */
+@each $num, $val in $header-sizes {
+
+	h#{$num},
+	.h#{$num} {
+		@extend %heading;
+		font-size: #{$val};
+	}
+}
+
+a {
+	color: map.get($colors, "gold-0");
+	font-weight: 600;
+	transition: all .1s;
+
+	&:hover {
+		filter: brightness(1.15);
+	}
+
+	&:active {
+		filter: brightness(.75);
+	}
+}
+
+.txt-uc {
+	text-transform: uppercase !important;
+}
+
+.txt-lc {
+	text-transform: lowercase !important;
+}
+
+.txt-center {
+	text-align: center !important;
+}
+
+.txt-justify {
+	text-align: justify !important;
+}
+
+.txt-left {
+	text-align: left !important;
+}
+
+.txt-right {
+	text-align: right !important;
+}

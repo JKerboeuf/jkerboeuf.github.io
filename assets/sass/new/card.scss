@@ -1,0 +1,81 @@
+a.proj-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: .8rem;
+	box-shadow: 0 0 .25rem .25rem rgba(map.get($colors, "blue-0"), .25);
+	transition: all .1s;
+	transform: scale(.95);
+
+	&:hover {
+		filter: brightness(1.15);
+		box-shadow: 0 0 .5rem .3rem rgba(map.get($colors, "blue-0"), .5);
+	}
+
+	&:active {
+		filter: brightness(.75);
+		box-shadow: 0 0 .5rem .3rem rgba(map.get($colors, "blue-0"), .6);
+	}
+
+	&:focus {
+		box-shadow: 0 0 .5rem .3rem rgba(map.get($colors, "blue-0"), .6);
+	}
+
+	.card-img {
+		border-radius: .8rem;
+		height: 10rem;
+		background: transparent no-repeat center;
+		background-size: contain;
+		box-shadow: 0 0 .25rem .1rem rgba(map.get($colors, "blue-0"), .3);
+	}
+
+	.card-title {
+		text-align: center;
+		color: map.get($colors, "gold-0");
+	}
+
+	.card-desc {
+		color: map.get($colors, "gold-1");
+	}
+}
+
+a.post-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-radius: .8rem;
+	box-shadow: 0 0 .25rem .25rem rgba(map.get($colors, "blue-0"), .25);
+	transition: all .1s;
+	transform: scale(.95);
+
+	&:hover {
+		filter: brightness(1.15);
+		box-shadow: 0 0 .5rem .3rem rgba(map.get($colors, "blue-0"), .5);
+	}
+
+	&:active {
+		filter: brightness(.75);
+		box-shadow: 0 0 .5rem .3rem rgba(map.get($colors, "blue-0"), .6);
+	}
+
+	&:focus {
+		box-shadow: 0 0 .5rem .3rem rgba(map.get($colors, "blue-0"), .6);
+	}
+
+	.card-img {
+		border-radius: .8rem;
+		background: transparent no-repeat center;
+		background-size: contain;
+		box-shadow: 0 0 .25rem .1rem rgba(map.get($colors, "blue-0"), .3);
+	}
+
+	.card-content {
+		.card-title {
+			color: map.get($colors, "gold-0");
+		}
+
+		.card-desc {
+			color: map.get($colors, "gold-1");
+		}
+	}
+}

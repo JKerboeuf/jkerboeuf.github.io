@@ -1,46 +1,37 @@
-<section class="hero is-halfheight text-center" id="contact">
-	<div class="hero-body">
-		<div class="container">
-			{% unless site.email == %}
-			<a id="contact-button" href="mailto:{{site.email}}"
-				class="btn border border-white rounded-pill text-white text-uppercase fw-semibold align-items-center w-25"
-				target="_blank">
-				<i class="fas fa-envelope"></i>{{site.data.strings.locales[navlang].contact_email}}
-			</a>
-			{% endunless %}
-			{% unless site.twitter_username == %}
-			<a id="contact-button" href="https://www.twitter.com/intent/tweet?screen_name={{site.twitter_username}}"
-				class="btn border border-white rounded-pill text-white text-uppercase fw-semibold align-items-center w-25"
-				target="_blank">
-				<i class="fab fa-x-twitter"></i>{{site.data.strings.locales[navlang].contact_x}}
-			</a>
-			{% endunless %}
-			<hr>
-			<h3 class="is-size-5 text-uppercase fw-semibold text-white is-marginless">
-				{{site.data.strings.locales[navlang].contact_find_me}}
-			</h3>
-			<div class="column is-full is-size-3">
-				{% unless site.twitter_username == %}
-				<a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank"
-					class="text-white"><i class="fab fa-x-twitter"></i></a>
-				{% endunless %}
-				{% unless site.instagram_username == %}
-				<a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="text-white"><i
-						class="fab fa-instagram"></i></a>
-				{% endunless %}
-				{% unless site.linkedin_username == %}
-				<a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank"
-					class="text-white"><i class="fab fa-linkedin"></i></a>
-				{% endunless %}
-				{% unless site.github_username == %}
-				<a href="http://www.github.com/{{site.github_username}}" target="_blank" class="text-white"><i
-						class="fab fa-github"></i></a>
-				{% endunless %}
-				{% unless site.reddit_username == %}
-				<a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="text-white"><i
-						class="fab fa-reddit"></i></a>
-				{% endunless %}
-			</div>
-		</div>
+<section class="bor-round-2 bg-blue-2" id="contact">
+	<h3 class="mx-auto">
+		{{site.data.strings.locales[navlang].contact_find_me}}
+	</h3>
+	<div class="d-flex flex-row mx-auto justify-content-evenly w-50p fa-2x">
+		{% unless site.email == %}
+		<a href="mailto:{{site.email}}" target="_blank">
+			<i class="fas fa-envelope"></i>
+		</a>
+		{% endunless %}
+		{% unless site.twitter_username == %}
+		<a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank">
+			<i class="fab fa-x-twitter"></i>
+		</a>
+		{% endunless %}
+		{% unless site.instagram_username == %}
+		<a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank">
+			<i class="fab fa-instagram"></i>
+		</a>
+		{% endunless %}
+		{% unless site.linkedin_username == %}
+		<a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank">
+			<i class="fab fa-linkedin"></i>
+		</a>
+		{% endunless %}
+		{% unless site.github_username == %}
+		<a href="http://www.github.com/{{site.github_username}}" target="_blank">
+			<i class="fab fa-github"></i>
+		</a>
+		{% endunless %}
+		{% unless site.reddit_username == %}
+		<a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank">
+			<i class="fab fa-reddit"></i>
+		</a>
+		{% endunless %}
 	</div>
 </section>

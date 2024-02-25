@@ -1,0 +1,27 @@
+/**
+ *	Coloring classes
+ *	Resulted class names : .[type]-[color-variables]
+ *	With [type] corresponding to :
+ *		txt, bg, bor, out, acc
+ *	For property corresponding to :
+ *		[color/background-color/border-color/outline-color/accent-color]: [color-variables]
+ */
+@each $type-name, $type in $color-types {
+	@each $color-name, $color in $colors {
+		.#{$type-name}-#{$color-name} {
+			#{$type}: $color !important;
+		}
+	}
+}
+
+html {
+	scrollbar-color: map.get($colors, "gold-0") map.get($colors, "blue-0");
+}
+
+html::-webkit-scrollbar-track {
+	background-color: map.get($colors, "blue-0");
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: map.get($colors, "gold-0");
+}

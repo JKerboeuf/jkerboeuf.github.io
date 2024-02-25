@@ -3,26 +3,20 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html>
 {% include head.html %}
 
-<body>
+<body class="bg-blue-0">
 	{% include navbar.html %}
-	<section class="hero is-fullheight">
-		<div class="hero-body">
-			<div class="container text-center" id="page-section">
-				<div class="section">
-					<h1 class="title is-1 text-uppercase fw-bold text-white">
-						{{page.title}}
-					</h1>
-					<div class="content is-marginless text-white">
-						{{ content }}
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	{% include footer.html %}
+	<div class="container bg-blue-1">
+		<section class="bor-round-2 bg-blue-2">
+			<h1 class="txt-center txt-gold-0">{{page.title}}</h1>
+		</section>
+		<section class="bor-round-2 bg-blue-2" id="page-content">
+			{{ content }}
+		</section>
+		{% include footer.html %}
+	</div>
 </body>
 
 </html>

@@ -1,15 +1,9 @@
-<div class="columns text-center bg-dark-subtle" id="feed-card">
-    <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
-        <div class="image is-16by9" style="background-image: url({{post.image}});"></div>
-    </div>
-    <a href="{{post.url | absolute_url}}">
-        <div class="column has-text-left-desktop has-text-left-tablet">
-            <h1 class="title is-size-4-touch text-white">{{post.title}}</h1>
-            <div class="content text-body">
-                {{ post.content | truncate: 300 | strip_html | strip_newlines | strip | escape }}
-                <hr class="bg-grey">
-                <span class="text-body">{{site.data.strings.locales[navlang].post_published}} <span class="fw-semibold">{{ post.date | date: "%-B %d, %Y" }}</span></span>
-            </div>
-        </div>
-    </a>
-</div>
+<a href="{{ post.url }}" class="post-card bg-blue-3 my-2 bor-round-2">
+	<div class="card-img bg-blue-2" style="background-image: url('{{ post.image }}')"></div>
+	<div class="card-content px-3 py-2">
+		<h4 class="card-title p-1">{{ post.title }}</h4>
+		<p class="card-desc p-2">{{ post.content | truncate: 300 | strip_html | strip_newlines | strip | escape }}</p>
+		<hr class="bor-gold-0 bor-round-2 w-75p mx-auto">
+		<small>{{site.data.strings.locales[navlang].post_published}} {{post.date | date: "%-B %d, %Y" }}</small>
+	</div>
+</a>

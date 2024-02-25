@@ -1,0 +1,112 @@
+/**
+ *	TEXTS
+ */
+
+$font-body: "Mulish", sans-serif;
+$font-mono: "Noto Sans Mono", monospace;
+
+$header-sizes: (
+	1: 2.5rem,
+	2: 2rem,
+	3: 1.75rem,
+	4: 1.5rem,
+	5: 1.25rem,
+	6: 1rem
+);
+
+/**
+ *	COLORS
+ */
+
+$colors: (
+	"blue-0": #11181a,
+	"blue-1": #1B282B,
+	"blue-2": #212F33,
+	"blue-3": #27373B,
+	"blue-4": #405a61,
+	"gold-0": #FFB96C,
+	"gold-1": #FDE9D0,
+	"black": #000,
+	"white": #fff,
+	"void": transparent
+);
+
+$color-types: (
+	"txt": "color",
+	"bg": "background-color",
+	"bor": "border-color",
+	"out": "outline-color",
+	"acc": "accent-color"
+);
+
+/**
+ *	CONTENT
+ */
+
+$displays: (
+	"none": "none",
+	"inline": "inline",
+	"block": "block",
+	"inblock": "inline-block",
+	"flex": "flex",
+	"inflex": "inline-flex",
+	"table": "table",
+	"grid": "grid"
+);
+
+$positions: (
+	"static": "static",
+	"absolute": "absolute",
+	"fixed": "fixed",
+	"relative": "relative",
+	"sticky": "sticky"
+);
+
+$pos-axis: "left" "right" "top" "bottom";
+
+$pos-values: 0, 10, 20, 25, 50, 75, 100;
+
+$size-axis: (
+	h: 'height',
+	w: 'width'
+);
+
+$size-units: (
+	p: '%',
+	vh: 'vh',
+	vw: 'vw'
+);
+
+$size-rules: 'none', 'min', 'max';
+
+$size-values: 10 20 25 50 75 100;
+
+/**
+ *	SPACING
+ */
+
+$space-types: (
+	p: 'padding',
+	m: 'margin'
+);
+
+$space-sides: (
+	'': '',
+	'x': 'x',
+	'y': 'y',
+	'l': 'left',
+	'r': 'right',
+	't': 'top',
+	'b': 'bottom'
+);
+
+$space-sizes: (
+	0: 0,
+	1: .25rem,
+	2: .5rem,
+	3: 1rem,
+	4: 1.5rem,
+	5: 2rem,
+	6: 3rem,
+	auto: auto
+);

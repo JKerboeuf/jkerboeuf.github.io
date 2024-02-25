@@ -6,14 +6,13 @@
 				class="d-inline-block align-text-top">
 			{{site.title}}
 		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapsed"
-			aria-controls="nav-collapsed" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-collapsed">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="nav-collapsed">
 			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-					<a class="nav-link {% if page.layout == 'home' %}active{% endif %}" aria-current="page"
+					<a class="nav-link {% if page.layout == 'home' %}active{% endif %}"
 						href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
 						{{site.data.strings.locales[navlang].nav_home}}
 					</a>
@@ -44,16 +43,16 @@
 				{% assign lang_ref_posts = site.posts | where:"ref", page.ref %}
 				{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts | sort: 'lang' %}
 				{% unless lang_ref_pages.size > 1 %}
-					<li class="nav-item"><a class="nav-link" href="#">
+				<li class="nav-item"><a class="nav-link" href="#">
 						<span class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></span>
 					</a></li>
 				{% endunless %}
 				{% for link in lang_ref_pages %}
-					{% if link.lang != page.lang %}
-						<li class="nav-item"><a class="nav-link" href="{{ link.url }}">
-							<span class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></span>
-						</a></li>
-					{% endif %}
+				{% if link.lang != page.lang %}
+				<li class="nav-item"><a class="nav-link" href="{{ link.url }}">
+						<span class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></span>
+					</a></li>
+				{% endif %}
 				{% endfor %}
 			</ul>
 		</div>

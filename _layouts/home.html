@@ -3,16 +3,18 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html>
 {% include head.html %}
 
-<body>
+<body class="bg-blue-0">
 	{% include navbar.html %}
-	{% include home/showcase.html %}
-	{% include home/carousel.html %}
-	{% include home/about.html %}
-	{% include home/contact.html %}
-	{% include footer.html %}
+	<div class="container bg-blue-1">
+		{% include home/about.html %}
+		{% include home/latest-proj.html %}
+		{% include home/latest-news.html %}
+		{% include home/contact.html %}
+		{% include footer.html %}
+	</div>
 </body>
 
 {% unless page.lang %}
