@@ -36,6 +36,11 @@ body {
 	height: 100%;
 }
 
+body {
+	background-size: 100px 100px;
+	background-repeat: repeat;
+}
+
 .container {
 	box-shadow: 0 0 .25rem .25rem rgba(map.get($colors, "blue-0"), .25);
 	padding-left: 2rem;
