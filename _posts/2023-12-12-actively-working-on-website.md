@@ -5,7 +5,7 @@ layout: post
 category: post
 lang: en
 description: Exciting news for this website !
-image: "/assets/img/logo.png"
+image: "/assets/img/logo-circle.png"
 tags:
 - Website
 - News

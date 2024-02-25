@@ -5,7 +5,7 @@ layout: project
 category: project
 lang: en
 description: My personal portfolio website, the one your on !
-image: "/assets/img/logo.png"
+image: "/assets/img/logo-circle.png"
 source: https://github.com/JKerboeuf/jkerboeuf.github.io
 tags:
 - Web

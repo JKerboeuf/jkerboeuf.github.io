@@ -5,7 +5,7 @@ layout: project
 category: project
 lang: fr
 description: Mon site web portfolio personel, celui sur lequel vous êtes !
-image: "/assets/img/logo.png"
+image: "/assets/img/logo-circle.png"
 source: https://github.com/JKerboeuf/jkerboeuf.github.io
 tags:
 - Web

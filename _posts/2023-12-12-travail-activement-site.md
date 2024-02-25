@@ -5,7 +5,7 @@ layout: post
 category: post
 lang: fr
 description: Annonce excitante pour ce site !
-image: "/assets/img/logo.png"
+image: "/assets/img/logo-circle.png"
 tags:
 - Website
 - News
