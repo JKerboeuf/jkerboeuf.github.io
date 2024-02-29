@@ -68,4 +68,4 @@ J'aime lire des mangas et regarder des animes, j'ai aussi pratiqué le tir à l'
 
 ---
 
-[Me contacter]({{site.url}}/{{page.lang}}#contact){: .btn-mixed}
+[Me contacter]({{site.url}}/contact/{{page.lang}}){: .btn-mixed}
