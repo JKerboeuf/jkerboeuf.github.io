@@ -6,28 +6,28 @@
 	<hr class="bor-gold-0 w-75p mx-auto bor-round-1">
 	<ul class="mx-5 list-unstyled h-100p d-flex flex-column justify-content-evenly txt-center">
 		<li>
-			<a class="btn-blue btn-icon w-100p"
+			<a class="btn-icon w-100p {% if page.ref == 'page-home' %}btn-gold{% else %}btn-blue{% endif %}"
 				href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
 				<i class="fa-solid fa-house"></i>{{site.data.strings.locales[navlang].nav_home}}
 			</a>
 		</li>
 		<li>
-			<a class="btn-blue btn-icon w-100p" href="{{site.url}}/about/{{navlang}}">
+			<a class="btn-icon w-100p {% if page.ref == 'page-about-me' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/about/{{navlang}}">
 				<i class="fa-solid fa-address-card"></i>{{site.data.strings.locales[navlang].nav_about}}
 			</a>
 		</li>
 		<li>
-			<a class="btn-blue btn-icon w-100p" href="{{site.url}}/{{navlang}}#contact">
+			<a class="btn-icon w-100p btn-blue" href="{{site.url}}/{{navlang}}#contact">
 				<i class="fa-solid fa-envelope"></i>{{site.data.strings.locales[navlang].nav_contact}}
 			</a>
 		</li>
 		<li>
-			<a class="btn-blue btn-icon w-100p" href="{{site.url}}/projects/{{navlang}}">
+			<a class="btn-icon w-100p {% if page.ref == 'page-project-list' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/projects/{{navlang}}">
 				<i class="fa-solid fa-diagram-project"></i>{{site.data.strings.locales[navlang].nav_projects}}
 			</a>
 		</li>
 		<li>
-			<a class="btn-blue btn-icon w-100p" href="{{site.url}}/posts/{{navlang}}">
+			<a class="btn-icon w-100p {% if page.ref == 'page-post-list' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/posts/{{navlang}}">
 				<i class="fa-solid fa-newspaper"></i>{{site.data.strings.locales[navlang].nav_posts}}
 			</a>
 		</li>
