@@ -1,7 +1,7 @@
 ---
 title: Roll-a-Ball
 ref: proj-rollaball
-layout: project
+layout: news
 category: project
 lang: en
 description: A simple Unity game about a ball collecting things made by following a tutorial

@@ -1,7 +1,7 @@
 ---
 title: Pokemon-like Game
 ref: proj-pokemon-like
-layout: project
+layout: news
 category: project
 lang: en
 description: A very early look at a game I started when learning Unity

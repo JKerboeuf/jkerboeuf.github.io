@@ -1,11 +1,12 @@
 ---
 title: Site activement en travaux
 ref: post-working-actively-portfolio
-layout: post
+layout: news
 category: post
 lang: fr
 description: Annonce excitante pour ce site !
 image: "/assets/img/logo-circle.png"
+project: proj-portfolio
 tags:
 - Website
 - News

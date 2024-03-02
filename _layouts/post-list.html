@@ -18,7 +18,7 @@ layout: compress
 		<section class="bor-round-2 bg-blue-2 d-none" id="searched-posts">
 		</section>
 		<section class="bor-round-2 bg-blue-2" id="posts">
-			{% assign posts = site.posts | where:"lang", page.lang | where:"layout", "post" %}
+			{% assign posts = site.posts | where:"lang", page.lang | where:"category", "post" %}
 			{% for post in posts %}
 			{% include post-card.html %}
 			{% endfor %}
