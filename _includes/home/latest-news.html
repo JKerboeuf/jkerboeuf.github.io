@@ -1,7 +1,7 @@
 <section class="bor-round-2 bg-blue-2">
 	<h2 class="txt-center">{{site.data.strings.locales[navlang].home_recent_news}}</h2>
 	<div class="bor-round-2 d-flex flex-column mb-3">
-		{% assign posts = site.posts | where:"lang", page.lang | where:"layout", "post" %}
+		{% assign posts = site.posts | where:"lang", page.lang | where:"category", "post" %}
 		{% for post in posts offsets:0 limit:5 %}
 		{% include post-card.html %}
 		{% endfor %}

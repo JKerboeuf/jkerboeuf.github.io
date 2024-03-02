@@ -14,7 +14,7 @@ layout: compress
 		</section>
 		<section class="bor-round-2 bg-blue-2">
 			<div class="d-flex w-100p flex-wrap mb-3">
-				{% assign projects = site.posts | where:"lang", page.lang | where:"layout", "project" %}
+				{% assign projects = site.posts | where:"lang", page.lang | where:"category", "project" %}
 				{% for project in projects %}
 				{% include project-card.html %}
 				{% endfor %}

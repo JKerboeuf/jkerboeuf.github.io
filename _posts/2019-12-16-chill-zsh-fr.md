@@ -1,7 +1,7 @@
 ---
 title: Thème Chill oh-my-zsh
 ref: proj-chill-zsh
-layout: project
+layout: news
 category: project
 lang: fr
 description: Un thème épuré et simpliste pour oh-my-zsh

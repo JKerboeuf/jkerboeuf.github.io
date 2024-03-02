@@ -1,7 +1,7 @@
 ---
 title: Roll-a-Ball
 ref: proj-rollaball
-layout: project
+layout: news
 category: project
 lang: fr
 description: Un jeu Unity où l'on incarne une boule qui ramasse des trucs fait en suivant un tutoriel
