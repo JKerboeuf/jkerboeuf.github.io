@@ -23,16 +23,13 @@
 			{{site.data.strings.locales[navlang].foot_more_links}}
 		</h3>
 		<ul class="list-unstyled">
-			{% assign n = site.html_pages | size %}
-			{% assign sitepages = site.html_pages | where:"lang", page.lang | sample: n %}
-			{% for sitepage in sitepages %}
-			{% unless sitepage.url == '/' or sitepage.url == '/en' or sitepage.url == '/fr' limit: 2 %}
+			{% assign projects = site.posts | where:"lang", page.lang | where:"category", "project" %}
+			{% for project in projects offset:0 limit: 4 %}
 			<li>
-				<a href="{{sitepage.url | absolute_url}}">
-					{{sitepage.title}}
+				<a href="{{project.url}}">
+					{{project.title}}
 				</a>
 			</li>
-			{% endunless %}
 			{% endfor %}
 		</ul>
 	</div>
@@ -41,10 +38,10 @@
 			{{site.data.strings.locales[navlang].foot_recent_posts}}
 		</h3>
 		<ul class="list-unstyled">
-			{% assign posts = site.posts | where:"lang", page.lang | where:"layout", "post" %}
-			{% for post in posts offset: 0 limit:3 %}
+			{% assign posts = site.posts | where:"lang", page.lang | where:"category", "post" %}
+			{% for post in posts offset: 0 limit: 4 %}
 			<li>
-				<a href="{{post.url | absolute_url}}">
+				<a href="{{post.url}}">
 					{{post.title}}
 				</a>
 			</li>
