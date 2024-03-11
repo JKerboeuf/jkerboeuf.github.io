@@ -12,28 +12,6 @@ samp {
 	font-family: $font-mono;
 }
 
-%heading {
-	margin-top: 0;
-	margin-bottom: .5em;
-	font-weight: bold;
-	line-height: 1.2;
-	color: inherit;
-}
-
-/**
- *	Header sizing rules & classes
- *	Affects h1-6 elements & .h1-6 classes
- *	with the correspondind sizes in $header-sizes
- */
-@each $num, $val in $header-sizes {
-
-	h#{$num},
-	.h#{$num} {
-		@extend %heading;
-		font-size: #{$val};
-	}
-}
-
 a {
 	color: map.get($colors, "gold-0");
 	font-weight: 600;
