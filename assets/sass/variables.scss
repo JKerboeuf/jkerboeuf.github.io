@@ -40,48 +40,6 @@ $color-types: (
 );
 
 /**
- *	CONTENT
- */
-
-$displays: (
-	"none": "none",
-	"inline": "inline",
-	"block": "block",
-	"inblock": "inline-block",
-	"flex": "flex",
-	"inflex": "inline-flex",
-	"table": "table",
-	"grid": "grid"
-);
-
-$positions: (
-	"static": "static",
-	"absolute": "absolute",
-	"fixed": "fixed",
-	"relative": "relative",
-	"sticky": "sticky"
-);
-
-$pos-axis: "left" "right" "top" "bottom";
-
-$pos-values: 0, 10, 20, 25, 50, 75, 100;
-
-$size-axis: (
-	h: 'height',
-	w: 'width'
-);
-
-$size-units: (
-	p: '%',
-	vh: 'vh',
-	vw: 'vw'
-);
-
-$size-rules: 'none', 'min', 'max';
-
-$size-values: 10 20 25 50 75 100;
-
-/**
  *	SPACING
  */
 

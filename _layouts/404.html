@@ -3,23 +3,23 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html>
-{% include head.html %}
+<html class="h-100">
+{% include common/head.html %}
 
 <body class="bg-blue-0">
-	{% include sidebar.html %}
-	<div class="container bg-blue-1">
-		<section class="bor-round-2 bg-blue-2 h-50 flex-grow-1">
+	{% include common/sidebar.html %}
+	<div class="container bg-blue-1 d-flex flex-column px-5 justify-content-between h-auto">
+		<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4 flex-grow-1">
 			<div class="my-auto d-flex flex-column">
-				<h1 class="txt-gold-0 txt-center fw-bolder">{{page.title}}</h1>
-				<hr class="w-75p mx-auto bor-gold-0">
-				<p class="txt-center">{{ content | strip_html }}</p>
-				<a href="{{site.url}}/" class="btn-mixed mx-auto">
+				<h1 class="txt-gold-0 text-center fw-bolder">{{page.title}}</h1>
+				<hr class="w-75 mx-auto bor-gold-0">
+				<p class="text-center">{{ content | strip_html }}</p>
+				<a href="{{site.url}}/" class="btn btn-mixed mx-auto">
 					{{site.data.strings.locales[navlang].nav_home}}
 				</a>
 			</div>
 		</section>
-		{% include footer.html %}
+		{% include common/footer.html %}
 	</div>
 </body>
 

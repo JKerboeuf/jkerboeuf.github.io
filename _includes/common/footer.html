@@ -1,0 +1,51 @@
+<div class="d-flex mb-2">
+	<a class="btn btn-blue bg-blue-2 mx-auto" onclick="window.scroll(0,0)">
+		{{site.data.strings.locales[navlang].foot_back_top}}
+	</a>
+</div>
+<footer class="bg-blue-2 p-4 pb-2 mx-0 row justify-content-center">
+	<div class="col row flex-nowrap mx-0">
+		<div class="img rounded-circle col-3 ml-3 d-none d-lg-block" style="background-image: url('{{site.author-image}}')"></div>
+		<div class="col-12 col-lg-9 my-auto">
+			<p class="mb-0">
+				<i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} Julien Kerboeuf
+			</p>
+			<a class="d-block" href="{{site.url}}/credits/{{navlang}}">
+				{{site.data.strings.locales[navlang].nav_credits}}
+			</a>
+			<a class="d-block" href="{{site.url}}/feed.xml" target="_blank">
+				{{site.data.strings.locales[navlang].foot_rss}}
+			</a>
+		</div>
+	</div>
+	<div class="col text-center">
+		<h3>
+			{{site.data.strings.locales[navlang].foot_more_links}}
+		</h3>
+		<ul class="list-unstyled">
+			{% assign projects = site.posts | where:"lang", page.lang | where:"category", "project" %}
+			{% for project in projects offset:0 limit: 4 %}
+			<li>
+				<a href="{{project.url}}">
+					{{project.title}}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="col text-center">
+		<h3>
+			{{site.data.strings.locales[navlang].foot_recent_posts}}
+		</h3>
+		<ul class="list-unstyled">
+			{% assign posts = site.posts | where:"lang", page.lang | where:"category", "news" %}
+			{% for post in posts offset: 0 limit: 4 %}
+			<li>
+				<a href="{{post.url}}">
+					{{post.title}}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</footer>

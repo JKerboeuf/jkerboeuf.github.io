@@ -1,0 +1,9 @@
+<a href="{{ news.url }}" class="post-card bg-blue-3 bor-round-2 my-2 d-flex flex-row justify-content-around">
+	<div class="card-img bg-blue-2" style="background-image: url('{{ news.image }}')"></div>
+	<div class="card-content px-3 py-2">
+		<h4 class="card-title p-1">{{ news.title }}</h4>
+		<p class="card-desc p-2">{{ news.content | truncate: 300 | strip_html | strip_newlines }}</p>
+		<hr class="bor-gold-0 w-75 mx-auto">
+		<small>{{site.data.strings.locales[navlang].post_published}} {% if page.lang == 'fr' %}{{news.date | date: "%d/%m/%Y" }}{% else %}{{news.date | date: "%Y-%m-%d" }}{% endif %}</small>
+	</div>
+</a>

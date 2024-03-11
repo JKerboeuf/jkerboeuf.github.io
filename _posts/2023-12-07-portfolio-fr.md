@@ -1,7 +1,7 @@
 ---
 title: Site Web Portoflio
 ref: proj-portfolio
-layout: news
+layout: post
 category: project
 lang: fr
 description: Mon site web portfolio personel, celui sur lequel vous êtes !

@@ -1,8 +1,8 @@
 ---
 title: Site activement en travaux
 ref: post-working-actively-portfolio
-layout: news
-category: post
+layout: post
+category: news
 lang: fr
 description: Annonce excitante pour ce site !
 image: "/assets/img/logo-circle.png"

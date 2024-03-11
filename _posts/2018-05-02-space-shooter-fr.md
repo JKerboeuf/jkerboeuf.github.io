@@ -1,7 +1,7 @@
 ---
 title: Space Shooter
 ref: proj-space-shooter
-layout: news
+layout: post
 category: project
 lang: fr
 description: Un jeu Unity de vaisseau spatial qui tir sur des astéroïdes fait en suivant un tutoriel

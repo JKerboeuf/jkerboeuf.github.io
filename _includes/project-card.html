@@ -1,5 +1,5 @@
-<a href="{{project.url}}" class="proj-card bg-blue-3 w-25p">
+<a href="{{project.url}}" class="proj-card bg-blue-3 col-12 col-md-6 col-xxl-3 d-flex flex-column justify-content-around px-0">
 	<h4 class="card-title p-1">{{ project.title }}</h4>
 	<div class="card-img bg-blue-2" style="background-image: url('{{project.image}}')"></div>
-	<p class="card-desc p-2">{{ project.description | truncate: 80}}</p>
+	<p class="card-desc p-2">{{ project.description | truncate: 100}}</p>
 </a>

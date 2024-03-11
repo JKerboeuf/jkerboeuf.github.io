@@ -17,40 +17,32 @@ lang: en
 
 ## Skills
 
-<div id="tri-col" markdown="1">
 
-### Languages
-
-### Web
-
-### Tools & Softwares
-
-- **C** - Advanced
-- **C#** - Advanced
-- **Java** - Intermediate
-- **JavaScript** - Advanced
-- **Python** - Basic
-
-[sep](/){: .d-none}
-
-- **HTML** - Intermediate
-- **CSS** - Intermediate
-- **SASS** - Intermediate
-- **php** - Intermediate
-- **SQL** - Intermediate
-- **Symfony** - Basic
-
-[sep](/){: .d-none}
-
-- **Visual Studio** - Intermediate
-- **Eclipse** - Intermediate
-- **Unity** - Basic
-- **Android Studio** - Basic
-- **Git** - Intermediate
-- **Unix env.** - Advanced
-- **Windows env.** - Intermediate
-
-</div>
+<div class="row"><div class="col-12 col-lg-4">
+<h3>Languages</h3><ul>
+<li><strong>C</strong> - Advanced</li>
+<li><strong>C#</strong> - Advanced</li>
+<li><strong>Java</strong> - Intermediate</li>
+<li><strong>JavaScript</strong> - Advanced</li>
+<li><strong>Python</strong> - Basic</li>
+</ul></div><div class="col-12 col-lg-4">
+<h3>Web</h3><ul>
+<li><strong>HTML</strong> - Intermediate</li>
+<li><strong>CSS</strong> - Intermediate</li>
+<li><strong>SASS</strong> - Intermediate</li>
+<li><strong>php</strong> - Intermediate</li>
+<li><strong>SQL</strong> - Intermediate</li>
+<li><strong>Symfony</strong> - Basic</li>
+</ul></div><div class="col-12 col-lg-4">
+<h3>Tools & Softwares</h3><ul>
+<li><strong>Visual Studio</strong> - Intermediate</li>
+<li><strong>Eclipse</strong> - Intermediate</li>
+<li><strong>Unity</strong> - Basic</li>
+<li><strong>Android Studio</strong> - Basic</li>
+<li><strong>Git</strong> - Intermediate</li>
+<li><strong>Envt. Unix</strong> - Advanced</li>
+<li><strong>Envt. Windows</strong> - Intermediate</li>
+</ul></div></div>
 
 ---
 
@@ -68,4 +60,4 @@ I like to read mangas and watch animes, I also practised archery and would love 
 
 ---
 
-[Contact me]({{site.url}}/contact/{{page.lang}}){: .btn-mixed}
+[Contact me]({{site.url}}/contact/{{page.lang}}){: .btn.btn-mixed}
