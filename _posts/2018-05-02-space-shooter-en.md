@@ -1,7 +1,7 @@
 ---
 title: Space Shooter
 ref: proj-space-shooter
-layout: news
+layout: post
 category: project
 lang: en
 description: A simple Unity game about a spaceship shooting at asteroids made by following a tutorial

@@ -5,10 +5,6 @@ body {
 	color: map.get($colors, "gold-1");
 }
 
-a {
-	text-decoration: none;
-}
-
 pre,
 code,
 kbd,
@@ -42,6 +38,7 @@ a {
 	color: map.get($colors, "gold-0");
 	font-weight: 600;
 	transition: all .1s;
+	text-decoration: none;
 
 	&:hover {
 		filter: brightness(1.15);
@@ -50,28 +47,4 @@ a {
 	&:active {
 		filter: brightness(.75);
 	}
-}
-
-.txt-uc {
-	text-transform: uppercase !important;
-}
-
-.txt-lc {
-	text-transform: lowercase !important;
-}
-
-.txt-center {
-	text-align: center !important;
-}
-
-.txt-justify {
-	text-align: justify !important;
-}
-
-.txt-left {
-	text-align: left !important;
-}
-
-.txt-right {
-	text-align: right !important;
 }

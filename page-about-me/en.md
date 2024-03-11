@@ -68,4 +68,4 @@ I like to read mangas and watch animes, I also practised archery and would love 
 
 ---
 
-[Contact me]({{site.url}}/contact/{{page.lang}}){: .btn-mixed}
+[Contact me]({{site.url}}/contact/{{page.lang}}){: .btn.btn-mixed}

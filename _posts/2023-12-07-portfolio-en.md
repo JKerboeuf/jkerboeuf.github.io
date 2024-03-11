@@ -1,7 +1,7 @@
 ---
 title: Portoflio Website
 ref: proj-portfolio
-layout: news
+layout: post
 category: project
 lang: en
 description: My personal portfolio website, the one your on !

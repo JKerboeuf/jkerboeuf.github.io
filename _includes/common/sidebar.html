@@ -1,43 +1,43 @@
 <nav class="bg-blue-1" id="sidebar">
-	<a class="rounded-pill nav-logo shad-1"
+	<a class="rounded-circle nav-logo shadow"
 		href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
 		<img src="/assets/img/logo-circle.png"></img>
 	</a>
-	<hr class="bor-gold-0 w-75p mx-auto bor-round-1">
-	<ul class="mx-5 list-unstyled h-100p d-flex flex-column justify-content-evenly txt-center">
+	<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
+	<ul class="mx-5 list-unstyled h-100 d-flex flex-column justify-content-evenly text-center">
 		<li>
-			<a class="btn-icon w-100p {% if page.ref == 'page-home' %}btn-gold{% else %}btn-blue{% endif %}"
+			<a class="btn btn-icon w-100 {% if page.ref == 'page-home' %}btn-gold{% else %}btn-blue{% endif %}"
 				href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
 				<i class="fa-solid fa-house"></i>{{site.data.strings.locales[navlang].nav_home}}
 			</a>
 		</li>
 		<li>
-			<a class="btn-icon w-100p {% if page.ref == 'page-about-me' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/about/{{navlang}}">
+			<a class="btn btn-icon w-100 {% if page.ref == 'page-about-me' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/about/{{navlang}}">
 				<i class="fa-solid fa-address-card"></i>{{site.data.strings.locales[navlang].nav_about}}
 			</a>
 		</li>
 		<li>
-			<a class="btn-icon w-100p {% if page.ref == 'page-contact' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/contact/{{navlang}}">
+			<a class="btn btn-icon w-100 {% if page.ref == 'page-contact' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/contact/{{navlang}}">
 				<i class="fa-solid fa-envelope"></i>{{site.data.strings.locales[navlang].nav_contact}}
 			</a>
 		</li>
 		<li>
-			<a class="btn-icon w-100p {% if page.ref == 'page-project-list' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/projects/{{navlang}}">
+			<a class="btn btn-icon w-100 {% if page.ref == 'page-project-list' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/projects/{{navlang}}">
 				<i class="fa-solid fa-diagram-project"></i>{{site.data.strings.locales[navlang].nav_projects}}
 			</a>
 		</li>
 		<li>
-			<a class="btn-icon w-100p {% if page.ref == 'page-post-list' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/posts/{{navlang}}">
+			<a class="btn btn-icon w-100 {% if page.ref == 'page-news-list' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/news/{{navlang}}">
 				<i class="fa-solid fa-newspaper"></i>{{site.data.strings.locales[navlang].nav_posts}}
 			</a>
 		</li>
-		<hr class="bor-gold-0 w-75p mx-auto bor-round-1">
+		<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
 		{% assign lang_ref_pages = site.pages | where:"ref", page.ref %}
 		{% assign lang_ref_posts = site.posts | where:"ref", page.ref %}
 		{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts | sort: 'lang' %}
 		{% unless lang_ref_pages.size > 1 %}
 		<li>
-			<a class="btn-blue btn-icon w-100p" href="#">
+			<a class="btn btn-blue btn-icon w-100" href="#">
 				<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
 				%}ENGLISH{% else %}FRANÇAIS{% endif %}
 			</a>
@@ -46,14 +46,14 @@
 		{% for link in lang_ref_pages %}
 		{% if link.lang != page.lang %}
 		<li>
-			<a class="btn-blue btn-icon w-100p" href="{{ link.url }}">
+			<a class="btn btn-blue btn-icon w-100" href="{{ link.url }}">
 				<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
 				%}ENGLISH{% else %}FRANÇAIS{% endif %}
 			</a>
 		</li>
 		{% endif %}
 		{% endfor %}
-		<hr class="bor-gold-0 w-75p mx-auto bor-round-1">
+		<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
 		<ul class="list-unstyled d-flex flex-row justify-content-evenly fa-2x">
 			{% unless site.facebook_username == %}
 			<li>

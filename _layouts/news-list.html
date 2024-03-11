@@ -3,27 +3,29 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html>
-{% include head.html %}
+<html class="h-100">
+{% include common/head.html %}
 
 <body class="bg-blue-0">
-	{% include sidebar.html %}
-	<div class="container bg-blue-1">
-		<section class="bor-round-2 bg-blue-2">
+	{% include common/sidebar.html %}
+	<div class="container bg-blue-1 d-flex flex-column px-5 justify-content-between h-auto">
+		<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4">
 			<div class="row flex-row">
-				<h1 class="txt-center col txt-gold-0">{{page.title}}</h1>
+				<h1 class="text-center col txt-gold-0">{{page.title}}</h1>
 				{% include search.html %}
 			</div>
 		</section>
-		<section class="bor-round-2 bg-blue-2 d-none" id="searched-posts">
+		<section class="bor-round-2 bg-blue-2 d-none flex-column my-5 p-4" id="searched-posts">
 		</section>
-		<section class="bor-round-2 bg-blue-2" id="posts">
-			{% assign posts = site.posts | where:"lang", page.lang | where:"category", "post" %}
-			{% for post in posts %}
-			{% include post-card.html %}
-			{% endfor %}
+		<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4 flex-grow-1" id="posts">
+			<div class="d-flex flex-column my-auto">
+				{% assign posts = site.posts | where:"lang", page.lang | where:"category", "news" %}
+				{% for news in posts %}
+				{% include news-card.html %}
+				{% endfor %}
+			</div>
 		</section>
-		{% include footer.html %}
+		{% include common/footer.html %}
 	</div>
 	<!--
 	<script src="{{site.url}}/assets/js/simple-jekyll-search.js"></script>

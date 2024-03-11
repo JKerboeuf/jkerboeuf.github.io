@@ -1,7 +1,7 @@
 ---
 title: Jeu Pokemon-like
 ref: proj-pokemon-like
-layout: news
+layout: post
 category: project
 lang: fr
 description: Un apercu d'un jeu que j'ai commencé en apprenant Unity

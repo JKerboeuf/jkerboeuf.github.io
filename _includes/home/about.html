@@ -1,19 +1,19 @@
-<section class="bor-round-2 bg-blue-2">
+<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4">
 	<div class="row">
 		<div class="col-2">
-			<img src="{{site.author-image}}" alt="{{site.author-name}}" class="img-fluid shad-1 rounded-pill">
+			<img src="{{site.author-image}}" alt="{{site.author-name}}" class="img-fluid shadow rounded-circle">
 		</div>
 		<div class="col-10 px-4 my-auto">
 			<div class="row">
 				<h3>Je suis Julien Kerboeuf,</h3>
 				<p>{{site.data.strings.locales[navlang].home_about}}</p>
 			</div>
-			<hr class="w-75p mx-auto bor-gold-0">
+			<hr class="w-75 mx-auto bor-gold-0">
 			<div class="d-flex flex-row justify-content-evenly w-50 mx-auto">
-				<a href="{{site.url}}/about/{{navlang}}" class="btn-mixed txt-uc">
+				<a href="{{site.url}}/about/{{navlang}}" class="btn btn-mixed text-uppercase">
 					{{site.data.strings.locales[navlang].nav_about}}
 				</a>
-				<a href="{{site.url}}/contact/{{navlang}}" class="btn-mixed txt-uc">
+				<a href="{{site.url}}/contact/{{navlang}}" class="btn btn-mixed text-uppercase">
 					{{site.data.strings.locales[navlang].nav_contact}}
 				</a>
 			</div>

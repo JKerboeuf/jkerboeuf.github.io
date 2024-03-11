@@ -1,9 +1,0 @@
-<a href="{{ post.url }}" class="post-card bg-blue-3 my-2 bor-round-2">
-	<div class="card-img bg-blue-2" style="background-image: url('{{ post.image }}')"></div>
-	<div class="card-content px-3 py-2">
-		<h4 class="card-title p-1">{{ post.title }}</h4>
-		<p class="card-desc p-2">{{ post.content | truncate: 300 | strip_html | strip_newlines | strip | escape }}</p>
-		<hr class="bor-gold-0 w-75p mx-auto">
-		<small>{{site.data.strings.locales[navlang].post_published}} {% if page.lang == 'fr' %}{{post.date | date: "%d/%m/%Y" }}{% else %}{{post.date | date: "%Y-%m-%d" }}{% endif %}</small>
-	</div>
-</a>

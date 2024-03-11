@@ -3,43 +3,45 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html>
-{% include head.html %}
+<html class="h-100">
+{% include common/head.html %}
 
 <body class="bg-blue-0">
-	{% include sidebar.html %}
-	<div class="container bg-blue-1">
-		<section class="bor-round-2 bg-blue-2">
-			<h1 class="txt-center txt-gold-0">{{page.title}}</h1>
+	{% include common/sidebar.html %}
+	<div class="container bg-blue-1 d-flex flex-column px-5 justify-content-between h-auto">
+		<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4">
+			<h1 class="text-center txt-gold-0">{{page.title}}</h1>
 			<div class="row">
 				<div class="img bg-blue-2 col" style="background-image: url('{{ page.image }}')"></div>
 				<div class="px-3 py-2 col">
 					<p>{{page.description | strip | strip_html | strip_newlines }}</p>
 					{% if page.last_update %}
 					<p class="mb-0">{{site.data.strings.locales[navlang].post_updated}}
-						<strong>{% if page.lang == 'fr' %}{{page.last_update | date: "%d/%m/%Y" }}{% else %}{{page.last_update | date: "%Y-%m-%d" }}{% endif %}</strong>
+						<strong>{% if page.lang == 'fr' %}{{page.last_update | date: "%d/%m/%Y" }}{% else
+							%}{{page.last_update | date: "%Y-%m-%d" }}{% endif %}</strong>
 					</p>
 					{% endif %}
 					<p>{{site.data.strings.locales[navlang].post_published}}
-						<strong>{% if page.lang == 'fr' %}{{page.date | date: "%d/%m/%Y" }}{% else %}{{page.date | date: "%Y-%m-%d" }}{% endif %}</strong>
+						<strong>{% if page.lang == 'fr' %}{{page.date | date: "%d/%m/%Y" }}{% else %}{{page.date | date:
+							"%Y-%m-%d" }}{% endif %}</strong>
 					</p>
 					{% assign tags = page.tags %}
 					{% unless tags.size == 0 %}
 					<div>
 						<i class="fa-solid fa-tags txt-gold"></i>
 						{% for tag in tags %}
-						<span class="bg-blue-3 bor-round-1 px-2 py-1 m-1 shad-1">{{ tag }}</span>
+						<span class="bg-blue-3 bor-round-1 px-2 py-1 m-1 shadow">{{ tag }}</span>
 						{% endfor %}
 					</div>
 					{% endunless %}
 					<div class="mt-4">
 						{% if page.download %}
-						<a href="{{page.download}}" class="btn-gold btn-icon mr-3" target="_blank">
+						<a href="{{page.download}}" class="btn btn-gold btn-icon mr-3" target="_blank">
 							<i class="fa-solid fa-download"></i>{{site.data.strings.locales[navlang].proj_download}}
 						</a>
 						{% endif %}
 						{% if page.source %}
-						<a href="{{page.source}}" class="btn-gold btn-icon" target="_blank">
+						<a href="{{page.source}}" class="btn btn-gold btn-icon" target="_blank">
 							<i class="fa-brands fa-github"></i>{{site.data.strings.locales[navlang].proj_source}}
 						</a>
 						{% endif %}
@@ -47,8 +49,9 @@ layout: compress
 						{% assign lang_ref_posts = site.posts | where:"ref", page.project %}
 						{% for link in lang_ref_posts %}
 						{% if link.lang == page.lang %}
-						<a href="{{link.url}}" class="btn-gold btn-icon">
-							<i class="fa-solid fa-diagram-project"></i>{{site.data.strings.locales[navlang].post_project}}
+						<a href="{{link.url}}" class="btn btn-gold btn-icon">
+							<i
+								class="fa-solid fa-diagram-project"></i>{{site.data.strings.locales[navlang].post_project}}
 						</a>
 						{% endif %}
 						{% endfor %}
@@ -57,10 +60,12 @@ layout: compress
 				</div>
 			</div>
 		</section>
-		<section class="bor-round-2 bg-blue-2" id="page-content">
-			{{ content }}
+		<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4 flex-grow-1" id="page-content">
+			<div class="my-auto d-flex flex-column">
+				{{ content }}
+			</div>
 		</section>
-		{% include footer.html %}
+		{% include common/footer.html %}
 	</div>
 </body>
 

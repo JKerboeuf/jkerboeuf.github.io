@@ -1,8 +1,8 @@
 ---
 title: Actively working on this website
 ref: post-working-actively-portfolio
-layout: news
-category: post
+layout: post
+category: news
 lang: en
 description: Exciting news for this website !
 image: "/assets/img/logo-circle.png"

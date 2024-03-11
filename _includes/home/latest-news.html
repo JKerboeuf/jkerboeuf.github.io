@@ -1,12 +1,12 @@
-<section class="bor-round-2 bg-blue-2">
-	<h2 class="txt-center">{{site.data.strings.locales[navlang].home_recent_news}}</h2>
+<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4">
+	<h2 class="text-center">{{site.data.strings.locales[navlang].home_recent_news}}</h2>
 	<div class="bor-round-2 d-flex flex-column mb-3">
-		{% assign posts = site.posts | where:"lang", page.lang | where:"category", "post" %}
-		{% for post in posts offsets:0 limit:5 %}
-		{% include post-card.html %}
+		{% assign posts = site.posts | where:"lang", page.lang | where:"category", "news" %}
+		{% for news in posts offsets:0 limit:5 %}
+		{% include news-card.html %}
 		{% endfor %}
 	</div>
-	<a href="{{site.url}}/posts/{{navlang}}" class="btn-mixed txt-uc mx-auto">
+	<a href="{{site.url}}/news/{{navlang}}" class="btn btn-mixed text-uppercase mx-auto">
 		{{site.data.strings.locales[navlang].nav_posts}}
 	</a>
 </section>
