@@ -1,18 +1,5 @@
 #page-content {
 
-	#tri-col {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-around;
-
-		h3,
-		ul {
-			display: block;
-			width: 30%;
-		}
-	}
-
 	hr {
 		border-color: map.get($colors, "gold-0");
 		border-radius: .8rem;

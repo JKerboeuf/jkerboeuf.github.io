@@ -17,40 +17,31 @@ lang: fr
 
 ## Compétences
 
-<div id="tri-col" markdown="1">
-
-### Langages
-
-### Web
-
-### Outils & Logiciels
-
-- **C** - Avancé
-- **C#** - Avancé
-- **Java** - Intermédiaire
-- **JavaScript** - Avancé
-- **Python** - Base
-
-[sep](/){: .d-none}
-
-- **HTML** - Intermédiaire
-- **CSS** - Intermédiaire
-- **SASS** - Intermédiaire
-- **php** - Intermédiaire
-- **SQL** - Intermédiaire
-- **Symfony** - Base
-
-[sep](/){: .d-none}
-
-- **Visual Studio** - Intermédiaire
-- **Eclipse** - Intermédiaire
-- **Unity** - Base
-- **Android Studio** - Base
-- **Git** - Intermédiaire
-- **Envt. Unix** - Avancé
-- **Envt. Windows** - Intermédiaire
-
-</div>
+<div class="row"><div class="col-12 col-lg-4">
+<h3>Langages</h3><ul>
+<li><strong>C</strong> - Avancé</li>
+<li><strong>C#</strong> - Avancé</li>
+<li><strong>Java</strong> - Intermédiaire</li>
+<li><strong>JavaScript</strong> - Avancé</li>
+<li><strong>Python</strong> - Base</li>
+</ul></div><div class="col-12 col-lg-4">
+<h3>Web</h3><ul>
+<li><strong>HTML</strong> - Intermédiaire</li>
+<li><strong>CSS</strong> - Intermédiaire</li>
+<li><strong>SASS</strong> - Intermédiaire</li>
+<li><strong>php</strong> - Intermédiaire</li>
+<li><strong>SQL</strong> - Intermédiaire</li>
+<li><strong>Symfony</strong> - Base</li>
+</ul></div><div class="col-12 col-lg-4">
+<h3>Outils & Logiciels</h3><ul>
+<li><strong>Visual Studio</strong> - Intermédiaire</li>
+<li><strong>Eclipse</strong> - Intermédiaire</li>
+<li><strong>Unity</strong> - Base</li>
+<li><strong>Android Studio</strong> - Base</li>
+<li><strong>Git</strong> - Intermédiaire</li>
+<li><strong>Envt. Unix</strong> - Avancé</li>
+<li><strong>Envt. Windows</strong> - Intermédiaire</li>
+</ul></div></div>
 
 ---
 
