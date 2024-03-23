@@ -27,6 +27,7 @@ body {
 body {
 	background-size: 100px 100px;
 	background-repeat: repeat;
+	overflow-x: hidden;
 }
 
 .container {
@@ -41,4 +42,11 @@ body {
 
 .shadow {
 	box-shadow: 0 0 .25rem .25rem rgba(map.get($colors, "blue-0"), .25) !important;
+}
+
+
+@media (max-width: 1399.98px) {
+	.col-0 {
+		width: 0%;
+	}
 }

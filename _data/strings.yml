@@ -2,9 +2,9 @@ locales:
   en: &DEFAULT_EN
     nav_home: "HOME"
     nav_about: "ABOUT"
-    nav_contact: "CONTACT ME"
+    nav_contact: "CONTACT"
     nav_posts: "NEWS"
-    nav_projects: "MY PROJECTS"
+    nav_projects: "PROJECTS"
     nav_credits: "Credits"
     foot_back_top: "Back to top"
     foot_more_links: "More links"
@@ -39,9 +39,9 @@ locales:
     <<: *DEFAULT_EN
     nav_home: "ACCUEIL"
     nav_about: "À PROPOS"
-    nav_contact: "ME CONTACTER"
+    nav_contact: "CONTACT"
     nav_posts: "ACTUALITÉS"
-    nav_projects: "MES PROJETS"
+    nav_projects: "PROJETS"
     nav_credits: "Crédits"
     foot_back_top: "Retourer en haut"
     foot_more_links: "Plus de liens"
