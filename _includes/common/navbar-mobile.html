@@ -1,0 +1,116 @@
+<nav id="sidebar-mobile" class="navbar navbar-expand-lg bg-blue-2 d-xxl-none d-flex  px-3 mt-3 shadow bor-round-2">
+	<a class="navbar-brand" href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
+		<img class="rounded-circle" src="/assets/img/logo-circle.png" alt="JKerboeuf" width="32" height="32"><span class="d-inline d-lg-none txt-gold-0"> JKerboeuf</span>
+	</a>
+	<button class="navbar-toggler btn btn-mixed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item {% if page.ref == 'page-home' %}active{% endif %}">
+				<a class="nav-link btn-icon" href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
+					<i class="fa-solid fa-house d-inline-block d-lg-none d-xl-inline-block"></i>{{site.data.strings.locales[navlang].nav_home}}
+				</a>
+			</li>
+			<li class="nav-item {% if page.ref == 'page-about-me' %}active{% endif %}">
+				<a class="nav-link btn-icon" href="{{site.url}}/about/{{navlang}}">
+					<i class="fa-solid fa-address-card d-inline-block d-lg-none d-xl-inline-block"></i>{{site.data.strings.locales[navlang].nav_about}}
+				</a>
+			</li>
+			<li class="nav-item {% if page.ref == 'page-contact' %}active{% endif %}">
+				<a class="nav-link btn-icon" href="{{site.url}}/contact/{{navlang}}">
+					<i class="fa-solid fa-envelope d-inline-block d-lg-none d-xl-inline-block"></i>{{site.data.strings.locales[navlang].nav_contact}}
+				</a>
+			</li>
+			<li class="nav-item {% if page.ref == 'page-project-list' %}active{% endif %}">
+				<a class="nav-link btn-icon" href="{{site.url}}/projects/{{navlang}}">
+					<i class="fa-solid fa-diagram-project d-inline-block d-lg-none d-xl-inline-block"></i>{{site.data.strings.locales[navlang].nav_projects}}
+				</a>
+			</li>
+			<li class="nav-item {% if page.ref == 'page-news-list' %}active{% endif %}">
+				<a class="nav-link btn-icon" href="{{site.url}}/news/{{navlang}}">
+					<i class="fa-solid fa-newspaper d-inline-block d-lg-none d-xl-inline-block"></i>{{site.data.strings.locales[navlang].nav_posts}}
+				</a>
+			</li>
+		</ul>
+		<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			{% assign lang_ref_pages = site.pages | where:"ref", page.ref %}
+			{% assign lang_ref_posts = site.posts | where:"ref", page.ref %}
+			{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts | sort: 'lang' %}
+			{% unless lang_ref_pages.size > 1 %}
+			<li class="nav-item">
+				<a class="nav-link btn-icon" href="#">
+					<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
+					%}ENGLISH{% else %}FRANÇAIS{% endif %}
+				</a>
+			</li>
+			{% endunless %}
+			{% for link in lang_ref_pages %}
+			{% if link.lang != page.lang %}
+			<li class="nav-item">
+				<a class="nav-link btn-icon" href="{{ link.url }}">
+					<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
+					%}ENGLISH{% else %}FRANÇAIS{% endif %}
+				</a>
+			</li>
+			{% endif %}
+			{% endfor %}
+			<li class="nav-item dropdown">
+				<a class="nav-link btn-icon dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+					<i class="fa-solid fa-globe d-inline-block d-lg-none d-xl-inline-block"></i>SOCIALS
+				</a>
+				<ul class="dropdown-menu bg-blue-3 bor-round-2 bor-blue-3 shadow">
+					{% unless site.facebook_username == %}
+					<li>
+						<a href="https://www.facebook.com/{{site.facebook_username}}" target="_blank" class="dropdown-item">
+							<i class="fa-brands fa-facebook-f"></i> Facebook
+						</a>
+					</li>
+					{% endunless %}
+					{% unless site.twitter_username == %}
+					<li>
+						<a href="https://twitter.com/{{site.twitter_username}}" target="_blank" class="dropdown-item">
+							<i class="fa-brands fa-x-twitter"></i> X (Twitter)
+						</a>
+					</li>
+					{% endunless %}
+					{% unless site.instagram_username == %}
+					<li>
+						<a href="https://www.instagram.com/{{site.instagram_username}}" target="_blank" class="dropdown-item">
+							<i class="fa-brands fa-instagram"></i> Instagram
+						</a>
+					</li>
+					{% endunless %}
+					{% unless site.linkedin_username == %}
+					<li>
+						<a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="dropdown-item">
+							<i class="fa-brands fa-linkedin"></i> LinkedIn
+						</a>
+					</li>
+					{% endunless %}
+					{% unless site.github_username == %}
+					<li>
+						<a href="https://www.github.com/{{site.github_username}}" target="_blank" class="dropdown-item">
+							<i class="fa-brands fa-github"></i> Github
+						</a>
+					</li>
+					{% endunless %}
+					{% unless site.youtube_channel_id == %}
+					<li>
+						<a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="dropdown-item">
+							<i class="fa-brands fa-youtube"></i> Youtube
+						</a>
+					</li>
+					{% endunless %}
+					{% unless site.reddit_username == %}
+					<li>
+						<a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="dropdown-item">
+							<i class="fa-brands fa-reddit"></i> Reddit
+						</a>
+					</li>
+					{% endunless %}
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>

@@ -1,109 +1,114 @@
-<nav class="bg-blue-1" id="sidebar">
-	<a class="rounded-circle nav-logo shadow"
-		href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
-		<img src="/assets/img/logo-circle.png"></img>
-	</a>
-	<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
-	<ul class="mx-4 list-unstyled h-100 d-flex flex-column justify-content-evenly text-center">
-		<li>
-			<a class="btn btn-icon w-100 {% if page.ref == 'page-home' %}btn-gold{% else %}btn-blue{% endif %}"
-				href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
-				<i class="fa-solid fa-house"></i>{{site.data.strings.locales[navlang].nav_home}}
-			</a>
-		</li>
-		<li>
-			<a class="btn btn-icon w-100 {% if page.ref == 'page-about-me' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/about/{{navlang}}">
-				<i class="fa-solid fa-address-card"></i>{{site.data.strings.locales[navlang].nav_about}}
-			</a>
-		</li>
-		<li>
-			<a class="btn btn-icon w-100 {% if page.ref == 'page-contact' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/contact/{{navlang}}">
-				<i class="fa-solid fa-envelope"></i>{{site.data.strings.locales[navlang].nav_contact}}
-			</a>
-		</li>
-		<li>
-			<a class="btn btn-icon w-100 {% if page.ref == 'page-project-list' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/projects/{{navlang}}">
-				<i class="fa-solid fa-diagram-project"></i>{{site.data.strings.locales[navlang].nav_projects}}
-			</a>
-		</li>
-		<li>
-			<a class="btn btn-icon w-100 {% if page.ref == 'page-news-list' %}btn-gold{% else %}btn-blue{% endif %}" href="{{site.url}}/news/{{navlang}}">
-				<i class="fa-solid fa-newspaper"></i>{{site.data.strings.locales[navlang].nav_posts}}
-			</a>
-		</li>
+
+	<nav class="bg-blue-1 col-0 col-xxl-3 d-none d-xxl-flex px-0" id="sidebar">
+		<a class="rounded-circle nav-logo shadow"
+			href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
+			<img src="/assets/img/logo-circle.png"></img>
+		</a>
 		<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
-		{% assign lang_ref_pages = site.pages | where:"ref", page.ref %}
-		{% assign lang_ref_posts = site.posts | where:"ref", page.ref %}
-		{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts | sort: 'lang' %}
-		{% unless lang_ref_pages.size > 1 %}
-		<li>
-			<a class="btn btn-blue btn-icon w-100" href="#">
-				<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
-				%}ENGLISH{% else %}FRANÇAIS{% endif %}
-			</a>
-		</li>
-		{% endunless %}
-		{% for link in lang_ref_pages %}
-		{% if link.lang != page.lang %}
-		<li>
-			<a class="btn btn-blue btn-icon w-100" href="{{ link.url }}">
-				<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
-				%}ENGLISH{% else %}FRANÇAIS{% endif %}
-			</a>
-		</li>
-		{% endif %}
-		{% endfor %}
-		<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
-		<ul class="list-unstyled d-flex flex-row justify-content-evenly fa-2x">
-			{% unless site.facebook_username == %}
+		<ul class="mx-4 list-unstyled h-100 d-flex flex-column justify-content-evenly text-center">
 			<li>
-				<a href="https://www.facebook.com/{{site.facebook_username}}" target="_blank">
-					<i class="fa-brands fa-facebook-f"></i>
+				<a class="btn btn-icon w-100 {% if page.ref == 'page-home' %}btn-gold{% else %}btn-blue{% endif %}"
+					href="{% if page.layout == 'home' %}#{% else %}{{site.url}}/{{page.lang}}{% endif %}">
+					<i class="fa-solid fa-house"></i>{{site.data.strings.locales[navlang].nav_home}}
+				</a>
+			</li>
+			<li>
+				<a class="btn btn-icon w-100 {% if page.ref == 'page-about-me' %}btn-gold{% else %}btn-blue{% endif %}"
+					href="{{site.url}}/about/{{navlang}}">
+					<i class="fa-solid fa-address-card"></i>{{site.data.strings.locales[navlang].nav_about}}
+				</a>
+			</li>
+			<li>
+				<a class="btn btn-icon w-100 {% if page.ref == 'page-contact' %}btn-gold{% else %}btn-blue{% endif %}"
+					href="{{site.url}}/contact/{{navlang}}">
+					<i class="fa-solid fa-envelope"></i>{{site.data.strings.locales[navlang].nav_contact}}
+				</a>
+			</li>
+			<li>
+				<a class="btn btn-icon w-100 {% if page.ref == 'page-project-list' %}btn-gold{% else %}btn-blue{% endif %}"
+					href="{{site.url}}/projects/{{navlang}}">
+					<i class="fa-solid fa-diagram-project"></i>{{site.data.strings.locales[navlang].nav_projects}}
+				</a>
+			</li>
+			<li>
+				<a class="btn btn-icon w-100 {% if page.ref == 'page-news-list' %}btn-gold{% else %}btn-blue{% endif %}"
+					href="{{site.url}}/news/{{navlang}}">
+					<i class="fa-solid fa-newspaper"></i>{{site.data.strings.locales[navlang].nav_posts}}
+				</a>
+			</li>
+			<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
+			{% assign lang_ref_pages = site.pages | where:"ref", page.ref %}
+			{% assign lang_ref_posts = site.posts | where:"ref", page.ref %}
+			{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts | sort: 'lang' %}
+			{% unless lang_ref_pages.size > 1 %}
+			<li>
+				<a class="btn btn-blue btn-icon w-100" href="#">
+					<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
+					%}ENGLISH{% else %}FRANÇAIS{% endif %}
 				</a>
 			</li>
 			{% endunless %}
-			{% unless site.twitter_username == %}
+			{% for link in lang_ref_pages %}
+			{% if link.lang != page.lang %}
 			<li>
-				<a href="https://twitter.com/{{site.twitter_username}}" target="_blank">
-					<i class="fa-brands fa-x-twitter"></i>
+				<a class="btn btn-blue btn-icon w-100" href="{{ link.url }}">
+					<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
+					%}ENGLISH{% else %}FRANÇAIS{% endif %}
 				</a>
 			</li>
-			{% endunless %}
-			{% unless site.instagram_username == %}
-			<li>
-				<a href="https://www.instagram.com/{{site.instagram_username}}" target="_blank">
-					<i class="fa-brands fa-instagram"></i>
-				</a>
-			</li>
-			{% endunless %}
-			{% unless site.linkedin_username == %}
-			<li>
-				<a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank">
-					<i class="fa-brands fa-linkedin"></i>
-				</a>
-			</li>
-			{% endunless %}
-			{% unless site.github_username == %}
-			<li>
-				<a href="https://www.github.com/{{site.github_username}}" target="_blank">
-					<i class="fa-brands fa-github"></i>
-				</a>
-			</li>
-			{% endunless %}
-			{% unless site.youtube_channel_id == %}
-			<li>
-				<a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank">
-					<i class="fa-brands fa-youtube"></i>
-				</a>
-			</li>
-			{% endunless %}
-			{% unless site.reddit_username == %}
-			<li>
-				<a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank">
-					<i class="fa-brands fa-reddit"></i>
-				</a>
-			</li>
-			{% endunless %}
+			{% endif %}
+			{% endfor %}
+			<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
+			<ul class="list-unstyled d-flex flex-row justify-content-evenly fa-2x">
+				{% unless site.facebook_username == %}
+				<li>
+					<a href="https://www.facebook.com/{{site.facebook_username}}" target="_blank">
+						<i class="fa-brands fa-facebook-f"></i>
+					</a>
+				</li>
+				{% endunless %}
+				{% unless site.twitter_username == %}
+				<li>
+					<a href="https://twitter.com/{{site.twitter_username}}" target="_blank">
+						<i class="fa-brands fa-x-twitter"></i>
+					</a>
+				</li>
+				{% endunless %}
+				{% unless site.instagram_username == %}
+				<li>
+					<a href="https://www.instagram.com/{{site.instagram_username}}" target="_blank">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</li>
+				{% endunless %}
+				{% unless site.linkedin_username == %}
+				<li>
+					<a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</li>
+				{% endunless %}
+				{% unless site.github_username == %}
+				<li>
+					<a href="https://www.github.com/{{site.github_username}}" target="_blank">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</li>
+				{% endunless %}
+				{% unless site.youtube_channel_id == %}
+				<li>
+					<a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank">
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+				</li>
+				{% endunless %}
+				{% unless site.reddit_username == %}
+				<li>
+					<a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank">
+						<i class="fa-brands fa-reddit"></i>
+					</a>
+				</li>
+				{% endunless %}
+			</ul>
 		</ul>
-	</ul>
-</nav>
+	</nav>

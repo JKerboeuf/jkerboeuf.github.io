@@ -7,20 +7,29 @@ layout: compress
 {% include common/head.html %}
 
 <body class="bg-blue-0">
-	{% include common/sidebar.html %}
-	<div class="container bg-blue-1 d-flex flex-column px-5 justify-content-between h-auto">
-		<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4">
-			<h1 class="text-center txt-gold-0">{{page.title}}</h1>
-		</section>
-		<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4 flex-grow-1">
-			<div class="row flex-wrap my-auto">
-				{% assign projects = site.posts | where:"lang", page.lang | where:"category", "project" %}
-				{% for project in projects %}
-				{% include project-card.html %}
-				{% endfor %}
+	<div class="row h-100 w-100 position-fixed mx-0">
+		{% include common/sidebar.html %}
+		<div class="col-12 col-xxl-9 px-0"></div>
+	</div>
+	<div class="row w-100 h-100 mx-0">
+		<div class="col-0 col-xxl-3 px-0"></div>
+		<div class="col-12 col-xxl-9 px-0 z-1">
+			<div class="container bg-blue-1 d-flex flex-column px-5 justify-content-between h-auto ms-auto ms-xxl-0">
+				{% include common/navbar-mobile.html %}
+				<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4">
+					<h1 class="text-center txt-gold-0">{{page.title}}</h1>
+				</section>
+				<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4 flex-grow-1">
+					<div class="row flex-wrap my-auto">
+						{% assign projects = site.posts | where:"lang", page.lang | where:"category", "project" %}
+						{% for project in projects %}
+						{% include project-card.html %}
+						{% endfor %}
+					</div>
+				</section>
+				{% include common/footer.html %}
 			</div>
-		</section>
-		{% include common/footer.html %}
+		</div>
 	</div>
 </body>
 
