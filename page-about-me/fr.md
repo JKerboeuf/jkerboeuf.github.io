@@ -13,6 +13,12 @@ lang: fr
 - <i class="fa-solid fa-graduation-cap"></i> 2018-2021 - Études à [l'école **42**](https://42.fr/) à Paris
 - <i class="fa-solid fa-graduation-cap"></i> 2016 - Obtention du **Bac S** spécialisation Sciences de l'Ingénieur et Informatique
 
+## Diplomes & Certifications
+
+- [Brevet](/assets/Brevet.pdf){:target="_blank"}
+- [Bac](/assets/Bac.pdf){:target="_blank"}
+- [Certification Pix](/assets/Pix.pdf){:target="_blank"}
+
 ---
 
 ## Compétences
@@ -59,4 +65,4 @@ J'aime lire des mangas et regarder des animes, j'ai aussi pratiqué le tir à l'
 
 ---
 
-[Me contacter]({{site.url}}/contact/{{page.lang}}){: .btn.btn-mixed}
+[Me contacter]({{site.url}}/contact/{{page.lang}}){: .btn.btn-mixed} [Mon CV](/assets/CV.pdf){: .btn.btn-mixed}{:target="_blank"}

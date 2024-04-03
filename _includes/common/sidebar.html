@@ -37,28 +37,6 @@
 				</a>
 			</li>
 			<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
-			{% assign lang_ref_pages = site.pages | where:"ref", page.ref %}
-			{% assign lang_ref_posts = site.posts | where:"ref", page.ref %}
-			{% assign lang_ref_pages = lang_ref_pages | concat: lang_ref_posts | sort: 'lang' %}
-			{% unless lang_ref_pages.size > 1 %}
-			<li>
-				<a class="btn btn-blue btn-icon w-100" href="#">
-					<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
-					%}ENGLISH{% else %}FRANÇAIS{% endif %}
-				</a>
-			</li>
-			{% endunless %}
-			{% for link in lang_ref_pages %}
-			{% if link.lang != page.lang %}
-			<li>
-				<a class="btn btn-blue btn-icon w-100" href="{{ link.url }}">
-					<i class="fi fi-{% if page.lang == 'fr' %}gb{% else %}fr{% endif %}"></i>{% if page.lang == 'fr'
-					%}ENGLISH{% else %}FRANÇAIS{% endif %}
-				</a>
-			</li>
-			{% endif %}
-			{% endfor %}
-			<hr class="bor-gold-0 w-75 mx-auto bor-round-1">
 			<ul class="list-unstyled d-flex flex-row justify-content-evenly fa-2x">
 				{% unless site.facebook_username == %}
 				<li>

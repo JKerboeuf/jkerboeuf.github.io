@@ -1,0 +1,12 @@
+<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4">
+	<h2 class="text-center">{{site.data.strings.locales[navlang].home_recent_pro}}</h2>
+	<div class="d-flex w-100 flex-wrap mb-3">
+		{% assign projects = site.posts | where:"lang", page.lang | where:"category", "pro" %}
+		{% for project in projects offsets:0 limit:8 %}
+		{% include project-card.html %}
+		{% endfor %}
+	</div>
+	<a href="{{site.url}}/projects/{{navlang}}" class="btn btn-mixed text-uppercase mx-auto">
+		{{site.data.strings.locales[navlang].nav_projects}}
+	</a>
+</section>
