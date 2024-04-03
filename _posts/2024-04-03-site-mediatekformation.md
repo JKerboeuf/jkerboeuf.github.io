@@ -45,7 +45,7 @@ Vous travaillez en tant que technicien développeur junior pour l’ESN InfoTech
 
 ## Compte Rendu & documents
 
-[**Lien du compte rendu**](/assets/mediatekformation_compte_rendu.pdf)
+[**Lien du compte rendu**](/assets/compte_rendu_mediatekformation.pdf)
 
 [Lien du Kanban](https://github.com/users/JKerboeuf/projects/10/views/1)  
 [Cahier des charges](/assets/mediatekformation_cahier_des_charges.pdf)  
