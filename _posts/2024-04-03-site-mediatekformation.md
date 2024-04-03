@@ -43,8 +43,11 @@ B1.5 – Mettre à disposition des utilisateurs un service informatique
 
 Vous travaillez en tant que technicien développeur junior pour l’ESN InfoTech Services 86 qui vient de remporter le marché pour différentes interventions au sein du réseau MediaTek86, dont certaines dans le domaine du développement d'application. Un contrat de développement a ainsi été rédigé entre MediaTek86 et InfoTech afin de réaliser 3 applications. Ce compte rendu porte sur la production de la 1ère application : une application web Symfony.
 
-## Compte Rendu
+## Compte Rendu & documents
 
-[Lien du compte rendu](/assets/mediatekformation_compte_rendu.pdf)
+[**Lien du compte rendu**](/assets/mediatekformation_compte_rendu.pdf)
 
-[Lien du Kanban](https://github.com/users/JKerboeuf/projects/10/views/1)
+[Lien du Kanban](https://github.com/users/JKerboeuf/projects/10/views/1)  
+[Cahier des charges](/assets/mediatekformation_cahier_des_charges.pdf)  
+[Missions](/assets/mediatekformation_missions.pdf)  
+[Contrat de développement](/assets/mediatekformation_contrat_developpement.pdf)
