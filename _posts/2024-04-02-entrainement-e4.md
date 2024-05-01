@@ -2,7 +2,7 @@
 title: Entrainement épreuve E4
 ref: proj-E4
 layout: post
-category: project
+category: pro
 lang: fr
 description: La page du devoir d'entrainement à l'épreuve E4
 image: "https://upload.wikimedia.org/wikipedia/fr/1/14/CNED_Logo_2017_RGB_Baseline.png"

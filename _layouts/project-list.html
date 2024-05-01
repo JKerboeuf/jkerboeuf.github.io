@@ -21,7 +21,7 @@ layout: compress
 				</section>
 				<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4 flex-grow-1">
 					<div class="row flex-wrap my-auto">
-						{% assign projects = site.posts | where:"lang", page.lang | where_exp: "page", "page.category contains 'project' or page.category contains 'pro'" %}
+						{% assign projects = site.posts | where:"lang", page.lang | where:"category", "pro" %}
 						{% for project in projects %}
 						{% include project-card.html %}
 						{% endfor %}

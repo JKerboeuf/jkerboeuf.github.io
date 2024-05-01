@@ -8,6 +8,7 @@ lang: fr
 
 ## Mon parcours
 
+- <i class="fa-solid fa-briefcase"></i> 2024 - **Stage** pour travailler sur un **site** et une **application**  pour le cabinet ophtalmologique b2.oeil
 - <i class="fa-solid fa-graduation-cap"></i> 2023-2024 - **BTS SIO** (Service Informatique aux Organisations) au [CNED](https://www.cned.fr/)
 - <i class="fa-solid fa-briefcase"></i> 2023 - **Stage** pour travailler sur une **appli web** pour [Vidux](https://vidux.net/) en Hongrie
 - <i class="fa-solid fa-graduation-cap"></i> 2018-2021 - Études à [l'école **42**](https://42.fr/) à Paris

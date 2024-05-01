@@ -18,17 +18,15 @@ tags:
 
 ## Description
 
-**Ce projet est un devoir que j'ai fais pour le CNED.**  
 Le but était de faire un jeu multijoueur sur Java, une instance du jeu servait de serveur, c'est un jeu où l'on peut juste bouger et tirer sur ses amis, on peut aussi leur parler dans le tchat.
 
 ## Description technique
 
-Le jeu est fait en Java, avec une architecture en MVC, il a été fait en utilisant l'IDE Apache NetBeans.
+Le jeu est fait en **Java**, avec une architecture en MVC, il a été fait en utilisant l'IDE **Eclipse**.
 
 ## Compétences visés
 
-B1.4 – Travailler en mode projet  
-B2.1 – Concevoir et développer une solution applicative
+B1.4 – Travailler en mode projet
 
 ## Depot
 
@@ -38,6 +36,6 @@ B2.1 – Concevoir et développer une solution applicative
 
 [Lien vers la documentation technique](/assets/urban-marginal-doc/index.html){:target="_blank"}
 
-## Capture d'écran
+## Aperçu
 
 ![Urban Marginal screenshot](https://i.imgur.com/QdeYKwh.png)

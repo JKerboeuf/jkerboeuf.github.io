@@ -41,7 +41,7 @@ locales:
     nav_home: "ACCUEIL"
     nav_about: "À PROPOS"
     nav_contact: "CONTACT"
-    nav_posts: "ACTUALITÉS"
+    nav_posts: "VEILLE"
     nav_projects: "PROJETS"
     nav_credits: "Crédits"
     foot_back_top: "Retourer en haut"
