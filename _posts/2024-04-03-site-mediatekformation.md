@@ -6,7 +6,6 @@ category: pro
 lang: fr
 description: Un site web pour les formations de MediaTek86
 image: "/assets/img/posts/mediatek86.jpg"
-source: https://github.com/JKerboeuf/mediatekformation
 tags:
 - B1.1
 - B1.2
@@ -29,7 +28,7 @@ Site web recençant les vidéos de formation de MediaTek86.
 
 ## Présentation technique
 
-Le site est fait en php avec le framework Symfony, il utilise une BDD MySQL. L'authentification se fait avec Keycloak via une API REST
+Le site est fait en **php** avec le framework **Symfony**, il utilise une BDD **MySQL**. L'authentification se fait avec **Keycloak** via une **API REST**
 
 ## Compétences visés
 
@@ -45,9 +44,10 @@ Vous travaillez en tant que technicien développeur junior pour l’ESN InfoTech
 
 ## Compte Rendu & documents
 
-[**Lien du compte rendu**](/assets/compte_rendu_mediatekformation.pdf)
+[**Lien du compte rendu**](/assets/compte_rendu_mediatekformation.pdf){:target="_blank"}
 
-[Lien du Kanban](https://github.com/users/JKerboeuf/projects/10/views/1)  
-[Cahier des charges](/assets/mediatekformation_cahier_des_charges.pdf)  
-[Missions](/assets/mediatekformation_missions.pdf)  
-[Contrat de développement](/assets/mediatekformation_contrat_developpement.pdf)
+[Code source](https://github.com/JKerboeuf/mediatekformation){:target="_blank"}  
+[Lien du Kanban](https://github.com/users/JKerboeuf/projects/10/views/1){:target="_blank"}  
+[Cahier des charges](/assets/mediatekformation_cahier_des_charges.pdf){:target="_blank"}  
+[Missions](/assets/mediatekformation_missions.pdf){:target="_blank"}  
+[Contrat de développement](/assets/mediatekformation_contrat_developpement.pdf){:target="_blank"}

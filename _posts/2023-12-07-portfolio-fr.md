@@ -24,9 +24,8 @@ C'est ce site ! C'est mon moyen pour donner des mises à jour et publier mes tra
 
 ## Description technique
 
-Il est fait avec [Jekyll](https://jekyllrb.com/) et hebergé par [Github Pages](https://pages.github.com/).  
-J'ai pris le template [WhatATheme](https://thedevslot.github.io/WhatATheme/) par [The Devslot](https://github.com/thedevslot) comme base mais je l'ai beaucoup changé pour le faire comme il est maintenant.  
-Ce site utilise aussi [Bootstrap](https://getbootstrap.com/) et [Font Awesome](https://fontawesome.com/).
+Il est fait avec [Jekyll](https://jekyllrb.com/) en **HTML**, **CSS** et **JavaScript** mais aussi du **Markdown** pour le contenu des pages, le tout hebergé par [Github Pages](https://pages.github.com/).  
+Ce site utilise aussi le framework CSS [Bootstrap](https://getbootstrap.com/) et des icones venant des librairies [Font Awesome](https://fontawesome.com/) et [flag-icons](https://flagicons.lipis.dev/).
 
 ## Compétences visées
 
