@@ -6,7 +6,7 @@
 <head>
 	{% include common/meta.html %}
 	<!-- Title -->
-	<title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
+	<title>{% if page.title %}{{page.title}} | {% endif %}{{site.title}}</title>
 	<link rel="shortcut icon"
 		href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/img/logo.png' | absolute_url }}{% endif %}"
 		type="image/x-icon">
