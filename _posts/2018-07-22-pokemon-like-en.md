@@ -10,7 +10,7 @@ tags:
 - Game
 - Unity
 - C#
-- Unifinished
+- Unfinished
 ---
 
 ## What is it ?
@@ -36,7 +36,7 @@ It is for my personal use only for now.
 Note that this project is still in a very early state, nothing is final
 
 - Interesting story, side-stories, and secondary characters stories
-- A banching skill tree to allow different playstyles
+- A branching skill tree to allow different play styles
 - Randomized attributes for the *"monsters"* to allow perfectionists and try-harders to farm for the best of the best (similar to Borderlands' weapons)
 - Randomized attacks gained based on the *"monster"* attributes (does it have sharp claws ? Maybe he will get devastating cutting attacks then)
 - Third-person 3D point of view in an *"open"* world with accurately scaled structures and *"monsters"*

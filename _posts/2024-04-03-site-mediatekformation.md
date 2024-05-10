@@ -24,7 +24,7 @@ tags:
 
 ## Présentation
 
-Site web recençant les vidéos de formation de MediaTek86.
+Site web recensant les vidéos de formation de MediaTek86.
 
 ## Présentation technique
 

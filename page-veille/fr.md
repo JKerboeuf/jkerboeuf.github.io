@@ -14,6 +14,8 @@ Ces chaines Youtube offrent un format agréable à visionner mais qui peut souve
     Chaîne spécialisé en cybersécurité, présentant les vulnérabilités récentes et les moyens de préventions.
 - [TechLinked](https://www.youtube.com/@techlinked){:target="_blank"}  
     Chaîne d'actualités très fréquentes et rapides sur tout ce qui touche au high-tech et l'informatique.
+- [GameLinked](https://www.youtube.com/@techlinked){:target="_blank"}  
+    Chaîne identique à TechLinked mais pour les actualités concernant le monde du jeu vidéo.
 - [GamersNexus](https://www.youtube.com/@GamersNexus){:target="_blank"}  
     Chaîne spécialisé dans le high-tech et les composants d'ordinateur avec un aspect très technique.
 

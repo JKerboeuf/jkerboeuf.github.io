@@ -22,7 +22,7 @@ J'ai l'intention de continuer à travailler dessus plus tard, je suis pour le mo
 ## ATTENTION
 
 Parce que je ne suis pas propriétaire des sprites de Pokemon, **je ne partagerais pas** ce projet tant que les ressources de Pokemon y seront contenu.  
-Ce projet est exclusivement pour mon utilisation personel.
+Ce projet est exclusivement pour mon utilisation personnel.
 
 ### Qu'est-ce que le jeu a pour le moment ?
 
@@ -38,8 +38,8 @@ Notez que ce projet est encore au tout debut, rien n'est final
 - Une histoire intéressante, des histoires secondaires et des histoires propres aux personnages secondaires
 - Un arbre de compétence à branche laissant la possibilités pour différent style de jeu
 - Des attributs aléatoires pour les *"monstres"* pour permettre aux perfectionnistes et try-harders de farm pour avoir les meilleurs stats (similaire aux armes de Borderlands)
-- Des attaques obtenues aléatoirement selon les attributs des *"monstres"* (Si il a de grandes griffes, il obtiendra peut-etre des attaques tranchantes dévatatrices)
-- Point de vue en 3D à la 3ème personne dans un monde *"ouvert"* avec un echelle réaliste pour les structures et *"monstres"*
+- Des attaques obtenues aléatoirement selon les attributs des *"monstres"* (Si il a de grandes griffes, il obtiendra peut-être des attaques tranchantes dévastatrices)
+- Point de vue en 3D à la 3ème personne dans un monde *"ouvert"* avec un échelle réaliste pour les structures et *"monstres"*
 
 ## À quoi ca ressemble ?
 

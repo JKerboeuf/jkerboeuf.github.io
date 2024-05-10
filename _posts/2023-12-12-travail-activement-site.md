@@ -17,6 +17,6 @@ Rapide annonce pour dire que je vais enfin travailler activement sur ce site à 
 
 Merci d'être tolérant tant que tout n'est pas encore parfait.
 
-La structure est à peu près finie, il manque encore quelques traductions et projets, et l'apparance du site va aussi beaucoup changer
+La structure est à peu près finie, il manque encore quelques traductions et projets, et l’apparence du site va aussi beaucoup changer
 
 ### Merci 👋

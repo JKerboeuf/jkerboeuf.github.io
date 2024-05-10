@@ -15,7 +15,7 @@ tags:
 
 ## Qu'est-ce que c'est ?
 
-Un jeu d'une boule qui ramasse des trucs flotant qui brillents.  
+Un jeu d'une boule qui ramasse des trucs flottant qui brillent.  
 J'ai fais ce jeu en suivant le tutoriel Unity **["Roll-a-Ball"](https://learn.unity.com/project/roll-a-ball){:target=_blank}**.  
 J'ai ajouté un petit peu au projet en ajoutant un second niveau, un son au ramassage et un petit menu de fin de niveau.
 
