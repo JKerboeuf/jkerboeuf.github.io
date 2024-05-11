@@ -15,6 +15,7 @@ tags:
 - Web
 - Jekyll
 - HTML/CSS
+- SCSS
 - Javascript
 ---
 
