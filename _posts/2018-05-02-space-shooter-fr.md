@@ -13,14 +13,13 @@ tags:
 - C#
 ---
 
-## Qu'est-ce que c'est ?
+## Description
 
-C'est un jeu de vaisseau spatial qui tir sur des astéroïdes, le but est de survivre le plus longtemps possible (la difficultée n'augmente pas avec le temps).  
+C'est un jeu de vaisseau spatial qui tir sur des astéroïdes, le but est de survivre le plus longtemps possible (la difficulté n'augmente pas avec le temps).  
 Le jeu contient des sons, de la musique, des effets, des apparitions et destructions d'objets et beaucoup de fun !  
 J'ai fais ce jeu en suivant le tutoriel Unity **["Space Shooter"](https://learn.unity.com/project/space-shooter-tutorial){:target=_blank}**.  
 Je n'ai rien ajouté de plus à ce que le tutoriel demande de faire, c'était mon premier projet sur Unity.
 
-## À quoi ca ressemble ?
+## Captures d'écran
 
 ![Space Shooter screenshot](https://i.imgur.com/0leNtqg.png)
-*Terrifiant.*

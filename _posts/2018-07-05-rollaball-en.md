@@ -13,13 +13,12 @@ tags:
 - C#
 ---
 
-## What is it ?
+## Description
 
 This is a game about a ball collecting shiny floating things.  
 I made this while following the Unity tutorial **["Roll-a-Ball"](https://learn.unity.com/project/roll-a-ball){:target=_blank}**.  
 I did extend it a little bit by adding a second level, adding a pickup sound and a small menu when finishing a level.
 
-## How does it look ?
+## Screenshots
 
 ![Roll-a-Ball screenshot](https://i.imgur.com/Oc5uYKK.png)
-*Fantastic.*

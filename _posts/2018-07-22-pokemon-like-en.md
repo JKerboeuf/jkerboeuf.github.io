@@ -10,10 +10,10 @@ tags:
 - Game
 - Unity
 - C#
-- Unifinished
+- Unfinished
 ---
 
-## What is it ?
+## Description
 
 I am a huge fan of Pokemon and I always wanted to do a game similar to them, and that is what this very early project is.  
 It is not meant to be *very* similar to Pokemon, it looks like this for now because I am no artist and just needed some assets to see how would the game play.  
@@ -36,12 +36,11 @@ It is for my personal use only for now.
 Note that this project is still in a very early state, nothing is final
 
 - Interesting story, side-stories, and secondary characters stories
-- A banching skill tree to allow different playstyles
+- A branching skill tree to allow different play styles
 - Randomized attributes for the *"monsters"* to allow perfectionists and try-harders to farm for the best of the best (similar to Borderlands' weapons)
 - Randomized attacks gained based on the *"monster"* attributes (does it have sharp claws ? Maybe he will get devastating cutting attacks then)
 - Third-person 3D point of view in an *"open"* world with accurately scaled structures and *"monsters"*
 
-## How does it look ?
+## Screenshots
 
 ![project screenshot](https://i.imgur.com/ulfJdnW.png)
-*Polished.*

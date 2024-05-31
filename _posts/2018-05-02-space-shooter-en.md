@@ -13,14 +13,13 @@ tags:
 - C#
 ---
 
-## What is it ?
+## Description
 
 This is a game about a spaceship shooting at asteroids, the goal is the survive the longest time (but it doesn't get harder with each wave).  
 The game features sounds, music, visual effects, spawning and destroying of objects and a lot of easy fun !  
 I made this while following the Unity tutorial **["Space Shooter"](https://learn.unity.com/project/space-shooter-tutorial){:target=_blank}**.  
 I did not do anything more than the tutorial itself on this one, it was my first Unity project.
 
-## How does it look ?
+## Screenshots
 
 ![Space Shooter screenshot](https://i.imgur.com/0leNtqg.png)
-*Terrific.*
