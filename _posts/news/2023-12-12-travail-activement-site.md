@@ -8,9 +8,8 @@ description: Annonce excitante pour ce site !
 image: "/assets/img/logo-circle.png"
 project: proj-portfolio
 tags:
-- Website
-- News
 - Update
+- Website
 ---
 
 Rapide annonce pour dire que je vais enfin travailler activement sur ce site à partir de maintenant.

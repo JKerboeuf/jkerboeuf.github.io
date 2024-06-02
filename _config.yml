@@ -31,8 +31,6 @@ linkedin_username: jkerboeuf
 github_username:  JKerboeuf
 reddit_username: PsychoPatate
 
-# Google Analytics
-google-analytics: G-PZ0L3V5ZS7
 # Disqus
 disqus-shortname: JKerboeuf
 
@@ -40,8 +38,6 @@ disqus-shortname: JKerboeuf
 author-name: JKerboeuf
 # URL for the Image of the Author
 author-image: /assets/img/logo-circle.png
-# 60 Words About the Author
-author-about: Versatile and very creative, I aspire to become a video game developer. I am a French student living in Lille, and I have big plans for my future and ongoing projects.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/JKerboeuf
 

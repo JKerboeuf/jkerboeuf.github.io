@@ -8,9 +8,8 @@ description: Exciting news for this website !
 image: "/assets/img/logo-circle.png"
 project: proj-portfolio
 tags:
-- Website
-- News
 - Update
+- Website
 ---
 
 Very quick update to announce that I will finally be actively working on this website from now on.

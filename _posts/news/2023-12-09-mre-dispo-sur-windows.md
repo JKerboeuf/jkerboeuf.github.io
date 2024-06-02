@@ -9,9 +9,9 @@ image: "https://raw.githubusercontent.com/JKerboeuf/Minecraft-Resource-Extractor
 project: proj-mre
 download: https://github.com/JKerboeuf/Minecraft-Resource-Extractor/releases/latest
 tags:
-- Minecraft
-- MRE
 - Update
+- MRE
+- Minecraft
 ---
 
 Le Minecraft Resource Extractor est désormais disponible pour les utilisateurs de Windows sans avoir à utiliser le sous-système Linux !  

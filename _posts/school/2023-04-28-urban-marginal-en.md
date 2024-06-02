@@ -9,8 +9,8 @@ image: "/assets/img/posts/urban.png"
 source: https://github.com/JKerboeuf/Urban-Marginal
 download: https://github.com/JKerboeuf/Urban-Marginal/releases/latest
 tags:
-- Travail d'école
-- Jeu
+- Game
+- School Work
 - Java
 ---
 
@@ -21,14 +21,6 @@ Le but était de faire un jeu multijoueur sur Java, une instance du jeu servait 
 ## Description technique
 
 Le jeu est fait en **Java**, avec une architecture en MVC, il a été fait en utilisant l'IDE **Eclipse**.
-
-## Compétences visés
-
-B1.4 – Travailler en mode projet
-
-## Documentation technique
-
-[Lien vers la documentation technique](/assets/urban-marginal-doc/index.html){:target="_blank"}
 
 ## Capture d'écran
 
