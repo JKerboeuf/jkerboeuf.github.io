@@ -1,6 +1,6 @@
 ---
 title: Urban Marginal
-ref: proj-urban-marginal
+ref: school-urban-marginal
 layout: post
 category: project
 lang: fr

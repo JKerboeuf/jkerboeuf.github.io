@@ -1,6 +1,6 @@
 ---
 title: Site activement en travaux
-ref: post-working-actively-portfolio
+ref: news-working-actively-portfolio
 layout: post
 category: news
 lang: fr

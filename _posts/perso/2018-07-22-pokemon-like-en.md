@@ -1,6 +1,6 @@
 ---
 title: Pokemon-like Game
-ref: proj-pokemon-like
+ref: perso-pokemon-like
 layout: post
 category: project
 lang: en

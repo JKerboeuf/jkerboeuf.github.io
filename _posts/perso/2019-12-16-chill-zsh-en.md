@@ -1,6 +1,6 @@
 ---
 title: Chill oh-my-zsh theme
-ref: proj-chill-zsh
+ref: perso-chill-zsh
 layout: post
 category: project
 lang: en

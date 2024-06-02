@@ -1,10 +1,10 @@
 ---
 title: Urban Marginal
-ref: proj-urban-marginal
+ref: school-urban-marginal
 layout: post
 category: project
 lang: en
-description: Un jeu de tir en 2D que j'ai fais comme devoir pour le CNED
+description: A 2D shooting game that I did for the CNED
 image: "/assets/img/posts/urban.png"
 source: https://github.com/JKerboeuf/Urban-Marginal
 download: https://github.com/JKerboeuf/Urban-Marginal/releases/latest
@@ -16,12 +16,12 @@ tags:
 
 ## Description
 
-Le but était de faire un jeu multijoueur sur Java, une instance du jeu servait de serveur, c'est un jeu où l'on peut juste bouger et tirer sur ses amis, on peut aussi leur parler dans le tchat.
+The goal was to make a multiplayer game on Java, an instance of the game served as a server, it's a game where you can just move and shoot your friends, you can also talk to them in the chat.
 
-## Description technique
+## Technical description
 
-Le jeu est fait en **Java**, avec une architecture en MVC, il a été fait en utilisant l'IDE **Eclipse**.
+The game is made of **Java**, with an architecture in MVC, it was done using the IDE **Eclipse**.
 
-## Capture d'écran
+## Screenshot
 
 ![Urban Marginal screenshot](https://i.imgur.com/QdeYKwh.png)

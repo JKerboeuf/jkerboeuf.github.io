@@ -1,6 +1,6 @@
 ---
 title: Site Web Portfolio
-ref: proj-portfolio
+ref: perso-portfolio
 layout: post
 category: project
 lang: fr
