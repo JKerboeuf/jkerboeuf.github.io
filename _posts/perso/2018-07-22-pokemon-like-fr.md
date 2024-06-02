@@ -1,6 +1,6 @@
 ---
 title: Jeu Pokemon-like
-ref: proj-pokemon-like
+ref: perso-pokemon-like
 layout: post
 category: project
 lang: fr

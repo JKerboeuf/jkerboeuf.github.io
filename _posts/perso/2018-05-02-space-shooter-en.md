@@ -1,6 +1,6 @@
 ---
 title: Space Shooter
-ref: proj-space-shooter
+ref: perso-space-shooter
 layout: post
 category: project
 lang: en

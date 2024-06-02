@@ -1,6 +1,6 @@
 ---
 title: MRE now available for Windows
-ref: post-mre-available-windows
+ref: news-mre-available-windows
 layout: post
 category: news
 lang: en
