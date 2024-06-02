@@ -3,7 +3,7 @@ title: Urban Marginal
 ref: proj-urban-marginal
 layout: post
 category: project
-lang: fr
+lang: en
 description: Un jeu de tir en 2D que j'ai fais comme devoir pour le CNED
 image: "/assets/img/posts/urban.png"
 source: https://github.com/JKerboeuf/Urban-Marginal
