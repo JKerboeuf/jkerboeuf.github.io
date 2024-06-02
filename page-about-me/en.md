@@ -8,7 +8,8 @@ lang: en
 
 ## My journey
 
-- <i class="fa-solid fa-graduation-cap"></i> 2023-2024 - Studiying for a 2 years diploma named "**BTS**" in French in programming at [CNED](https://www.cned.fr/)
+- <i class="fa-solid fa-briefcase"></i> 2024 - **Internship** to work on a **website** for b2.oeil, an ophthalmology clinic
+- <i class="fa-solid fa-graduation-cap"></i> 2023-2024 - Studying for a 2 years diploma named "**BTS**" in French in programming at [CNED](https://www.cned.fr/)
 - <i class="fa-solid fa-briefcase"></i> 2023 - **Internship** to work on a **web app** for the company [Vidux](https://vidux.net/) in Hungary
 - <i class="fa-solid fa-graduation-cap"></i> 2018-2021 - Studied at [**42** School](https://42.fr/) in Paris
 - <i class="fa-solid fa-graduation-cap"></i> 2016 - Graduated from high school with the diploma named "**Bac**" in French, with scientific and computer science specialization

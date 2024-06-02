@@ -13,13 +13,12 @@ tags:
 - C#
 ---
 
-## Qu'est-ce que c'est ?
+## Description
 
-Un jeu d'une boule qui ramasse des trucs flotant qui brillents.  
+Un jeu d'une boule qui ramasse des trucs flottant qui brillent.  
 J'ai fais ce jeu en suivant le tutoriel Unity **["Roll-a-Ball"](https://learn.unity.com/project/roll-a-ball){:target=_blank}**.  
 J'ai ajouté un petit peu au projet en ajoutant un second niveau, un son au ramassage et un petit menu de fin de niveau.
 
-## À quoi ca ressemble ?
+## Captures d'écran
 
 ![Roll-a-Ball screenshot](https://i.imgur.com/Oc5uYKK.png)
-*Fantastique.*

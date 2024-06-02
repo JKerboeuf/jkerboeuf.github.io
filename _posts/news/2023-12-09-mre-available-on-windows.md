@@ -9,13 +9,13 @@ image: "https://raw.githubusercontent.com/JKerboeuf/Minecraft-Resource-Extractor
 project: proj-mre
 download: https://github.com/JKerboeuf/Minecraft-Resource-Extractor/releases/latest
 tags:
-- Minecraft
-- MRE
 - Update
+- MRE
+- Minecraft
 ---
 
-The Minecraft Resource Extractor is now available for Windows users without the need to use the linux sub-system !  
-The Shell script is still the same as before and is still available for linux users, the new .exe version **only** works on Windows.
+The Minecraft Resource Extractor is now available for Windows users without the need to use the Linux sub-system !  
+The Shell script is still the same as before and is still available for Linux users, the new .exe version **only** works on Windows.
 
 ### Requirements
 
@@ -25,7 +25,7 @@ The Shell script is still the same as before and is still available for linux us
 
 - Check and install the requirements above if needed
 - Download the latest **Windows** release **[here](https://github.com/JKerboeuf/Minecraft-Resource-Extractor/releases/latest){:target="_blank"}**, it is found below "Assets" and should be named **"mre-for-windows.zip"**
-- Extract the folder inside of the donwloaded .zip file and launch `MinecraftResourceExtractor.exe`
+- Extract the folder inside of the downloaded .zip file and launch `MinecraftResourceExtractor.exe`
 - Follow the instructions given and extract whatever you want !
 - All extracted files go to the folder **"mre-output"** in the same folder as the .exe
 
