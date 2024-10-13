@@ -1,8 +1,8 @@
 ---
-title: News
+title: Blog
 ref: page-news-list
 layout: news-list
-permalink: /news/en
+permalink: /blog/en
 lang: en
 ---
 

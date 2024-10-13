@@ -2,7 +2,7 @@
 title: MRE maintenant disponible pour Windows
 ref: news-mre-available-windows
 layout: post
-category: news
+category: blog
 lang: fr
 description: Une nouvelle version de Minecraft Resource Extractor est maintenant disponible pour Windows !
 image: "https://raw.githubusercontent.com/JKerboeuf/Minecraft-Resource-Extractor/main/mre%20banner%20512.webp"
