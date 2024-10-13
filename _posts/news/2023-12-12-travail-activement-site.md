@@ -2,7 +2,7 @@
 title: Site activement en travaux
 ref: news-working-actively-portfolio
 layout: post
-category: news
+category: blog
 lang: fr
 description: Annonce excitante pour ce site !
 image: "/assets/img/logo-circle.png"

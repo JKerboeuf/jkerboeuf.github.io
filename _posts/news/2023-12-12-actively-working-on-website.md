@@ -2,7 +2,7 @@
 title: Actively working on this website
 ref: news-working-actively-portfolio
 layout: post
-category: news
+category: blog
 lang: en
 description: Exciting news for this website !
 image: "/assets/img/logo-circle.png"

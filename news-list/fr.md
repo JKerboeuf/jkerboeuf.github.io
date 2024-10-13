@@ -1,8 +1,8 @@
 ---
-title: Actualités
+title: Blog
 ref: page-news-list
 layout: news-list
-permalink: /news/fr
+permalink: /blog/fr
 lang: fr
 ---
 

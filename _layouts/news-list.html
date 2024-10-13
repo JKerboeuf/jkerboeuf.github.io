@@ -26,7 +26,7 @@ layout: compress
 				</section>
 				<section class="bor-round-2 bg-blue-2 d-flex flex-column my-5 p-4 flex-grow-1" id="posts">
 					<div class="d-flex flex-column my-auto">
-						{% assign posts = site.posts | where:"lang", page.lang | where:"category", "news" %}
+						{% assign posts = site.posts | where:"lang", page.lang | where:"category", "blog" %}
 						{% for news in posts %}
 						{% include news-card.html %}
 						{% endfor %}

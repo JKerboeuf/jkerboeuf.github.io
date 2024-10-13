@@ -38,7 +38,7 @@
 			{{site.data.strings.locales[navlang].foot_recent_posts}}
 		</h3>
 		<ul class="list-unstyled">
-			{% assign posts = site.posts | where:"lang", page.lang | where:"category", "news" %}
+			{% assign posts = site.posts | where:"lang", page.lang | where:"category", "blog" %}
 			{% for post in posts offset: 0 limit: 4 %}
 			<li>
 				<a href="{{post.url}}">
