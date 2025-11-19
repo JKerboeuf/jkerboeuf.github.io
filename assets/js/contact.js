@@ -4,7 +4,7 @@ document.	 	querySelector('.daoudfnw').		setAttribute('href','mailto:'+gjdfbiu(t
 function mpy5mbvj9(bgisrud){let gie5vg5 = bgisrud.split('.')
 mglirsh=gie5vg5 	 	[381-381]+'.liamg@'+			gie5vg5[0+100-99]+'.'+gie5vg5[2]}var mglirsh;
 function glgpwe(){mpy5mbvj9(pohtn) 	 	;clearInterval(qworjw)		
-godrsh8gsou 	()}var pohtn="mtc.fuhtbrhk.nhiluj";function gdsogn9(bgisrud 	 	 	){
+godrsh8gsou 	()}var pohtn="moc.fuhobrhk.nhiluj";function gdsogn9(bgisrud 	 	 	){
 if(vbulx)return (bgisrud	.replaceAll('h', 'e')) 	 	
 else{vbulx=1;return 	(bgisrud.replaceAll('t', 'o'))}}var vbulx=0; 	 	
 function		gjdfbiu(bgisrud){if		(bgisrud==="")return"";else 	 	
