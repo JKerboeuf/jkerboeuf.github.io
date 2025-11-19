@@ -17,9 +17,18 @@ tags:
 
 ## Description
 
-C'est ce site ! C'est mon moyen pour donner des mises à jour et publier mes travaux.
+C'est ce site ! C'est mon outil pour donner des mises à jour et publier mes travaux dans le monde.  
 
-## Description technique
+## Fonctionnalités
 
-Il est fait avec [Jekyll](https://jekyllrb.com/) en **HTML**, **CSS** et **JavaScript** mais aussi du **Markdown** pour le contenu des pages, le tout hébergé par [Github Pages](https://pages.github.com/).
-Ce site utilise aussi le framework CSS [Bootstrap](https://getbootstrap.com/) et des icônes venant des librairies [Font Awesome](https://fontawesome.com/) et [flag-icons](https://flagicons.lipis.dev/).
+- Site Web semi-statique, léger et facile à développer
+- **Conception réactive** pour une bonne expérience visuelle sur toutes les tailles d'écrans
+- Parcourez mes projets, vérifiez leur code source ou téléchargez-les
+- **Flux RSS** pour être mis à jour sur le nouveau contenu
+- Localisation anglais/français
+
+## Descriptif technique
+
+Le site est réalisé avec [Jekyll](https://jekyllrb.com/) en **html**, **SCSS** et **JavaScript** mais aussi **Markdown** pour le contenu des pages, et hébergé par [Github Pages](https://pages.github.com/).  
+Ce site utilise également le framework CSS [Bootstrap](https://getbootstrap.com/) et les icônes de [Font Awesome](https://fontawesome.com/) et [flag-icons](https://flagicons.lipis.dev/).  
+Le système de localisation a été créé suivant le super [**guide pour créer des pages jekyll localisées**](https://mcpride.github.io/posts/development/2018/02/25/localized-jekyll-pages-without-plugin/) de [**Mc Pride**](https://github.com/mcpride).

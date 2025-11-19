@@ -19,7 +19,16 @@ tags:
 
 It is this website ! It is my tool to give updates and publish my works to the world.  
 
-## Description technique
+## Features
 
-It is made with [Jekyll](https://jekyllrb.com/) in **HTML**, **CSS** and **JavaScript** but also some **Markdown** for the pages' content, and hosted by [Github Pages](https://pages.github.com/).
-The website also uses the CSS Framework [Bootstrap](https://getbootstrap.com/) and icons from the libraries [Font Awesome](https://fontawesome.com/) and [flag-icons](https://flagicons.lipis.dev/).
+- Semi-static website, light-weight and easy to expand
+- **Responsive design** for good viewing experience on any size of screens
+- Browse my projects, check their source code or download them
+- **RSS Feed** to be updated on new content
+- English/French Localization
+
+## Technical description
+
+The website is done with [Jekyll](https://jekyllrb.com/) in **html**, **SCSS** and **JavaScript** but also **Markdown** for the contents of the pages, and hosted by [Github Pages](https://pages.github.com/).  
+This site also uses the CSS framework [Bootstrap](https://getbootstrap.com/) and icons from [Font Awesome](https://fontawesome.com/) and [flag-icons](https://flagicons.lipis.dev/).  
+The localization system was made following [**Mc Pride's**](https://github.com/mcpride) awesome [**guide to make localized jekyll pages**](https://mcpride.github.io/posts/development/2018/02/25/localized-jekyll-pages-without-plugin/)
