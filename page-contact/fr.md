@@ -8,7 +8,7 @@ lang: fr
 
 ## Email
 
-<i class="fa-solid fa-envelope"></i> [M'envoyer un email](mailto:notmymail@gmail.com){:target="_blank" .daoudfnw}
+<i class="fa-solid fa-envelope"></i> [M'envoyer un email](mailto:notmymail@gmail.com){:target="_blank" .fw-bold.daoudfnw}
 
 ## Résaux sociaux
 
