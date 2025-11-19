@@ -25,7 +25,7 @@ It is also possible for the author of a video to modify the information of the v
 
 The web application is written in **PHP**, and uses a database **MySQL**.  
 The style of the site is done thanks to **Bootstrap** as well as **Bootstrap Icons**.  
-It also contains a duplicated video check, to avoid uploading to let the same video pass several times, even from different users.
+It also contains a duplicated video check, to avoid uploading the same video several times, even from different users.
 
 ## Screenshots
 
