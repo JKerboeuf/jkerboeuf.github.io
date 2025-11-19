@@ -4,6 +4,7 @@ ref: perso-spooktube
 layout: post
 category: project
 lang: en
+source: https://github.com/JKerboeuf/SpookTube
 description: A small private website with friends imitating the one coming from the game Content Warning
 image: "https://raw.githubusercontent.com/JKerboeuf/jkerboeuf.github.io/refs/heads/master/assets/img/posts/spooktube-icon.webp"
 tags:
